@@ -1,0 +1,301 @@
+@charset "utf-8";
+@import "common";
+@import "mData";
+
+
+.head{
+	.pos(fix);
+	.left(0);
+	.top(0);
+	.width-max();
+	.height(@h_height);
+	.bgColor(@h_bgColor);
+	.head-title{
+		.width-max();
+		.height(auto);
+		.text-al(center);
+		>img,
+		>span.head-content{
+		    vertical-align: middle;
+		}
+		>img{
+			.margin-rt(8px);
+			.width(@h_logoH);
+		}
+		>span.head-content{
+			.display(ib);
+			.text-al(left);
+			.border-lt(1px,solid,@white);
+			.padding-lt(8px);
+			>p{
+				.color(@h_color);
+
+			}
+			>p.head-ch{
+				.fontSize(16px);
+			}
+			>p.head-en{
+				.fontSize(12px);
+			}
+			
+		}
+	}
+	>a.head-links{
+		.display(ib);
+		.pos(abs);
+		.left(18px);
+	}
+}
+
+nav.menu{
+	.pos(fix);
+	.top(0);
+	.z-index(1);
+	.left(-100%);
+	.width-max();
+	.height(100%);
+	.bgColor(@m_bgColor);
+	.menu-head{
+		.width-max();
+		.height(43px);
+		.bgColor(@m_bgHead);
+		.clearfix;
+		>img{
+			.height(36px);
+		}
+		>img.menu-head-return{
+			.fl();
+			.margin(3.5px 0 3.5px -40px);
+		}
+		>img.menu-head-close{
+			.fr();
+			.margin(3.5px 10px 3.5px 0);
+		}
+	}
+	.menu-main{
+		.width-max();
+		.height(100%);
+		>ul.menu-primary{
+			>li{
+				>a.menu-item{
+					.display(b);
+					.fontWeight(400);
+					.padding(28px 15px 28px 20px);
+					>img,
+					>span{
+						vertical-align: middle;
+					}
+					>img{
+						.width(22px);
+						.margin-rt(20px);
+					}
+					>span{
+						.fontSize(22px);
+						.color(@white);
+					}
+					>i.next{
+						.display(ib);
+						.fr();
+						.margin-tp(5px);
+						>img{
+							.width(10px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:319px){
+	.head{
+		.head-title{
+			.margin(11.5px 0);
+			>span.head-content{
+				>p.head-en{
+					.margin-tp(-5px);
+				}
+			}
+		}
+		>a.head-links{
+			.top(11.5px);
+			>img{
+				.height(27px;)
+			}
+		}
+	}
+	nav.menu{
+		.menu-main{
+			>ul.menu-primary{
+				>li{
+					>a.menu-item{
+						.padding(20px 15px 20px 20px);
+						>img{
+							.width(22px);
+							.margin-rt(20px);
+						}
+						>span{
+							.fontSize(22px);
+						}
+						>i.next{
+							.margin-tp(5px);
+							>img{
+								.width(10px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width:374px){
+	.head{
+		.head-title{
+			.margin(11.5px 0);
+			>span.head-content{
+				>p.head-en{
+					.margin-tp(-5px);
+				}
+			}
+		}
+		>a.head-links{
+			.top(11.5px);
+			>img{
+				.height(27px;)
+			}
+		}
+	}
+	nav.menu{
+		.menu-main{
+			>ul.menu-primary{
+				>li{
+					>a.menu-item{
+						.padding(20px 15px 20px 20px);
+						>img{
+							.width(22px);
+							.margin-rt(20px);
+						}
+						>span{
+							.fontSize(22px);
+						}
+						>i.next{
+							.margin-tp(5px);
+							>img{
+								.width(10px);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width:413px){
+	.head{
+		.head-title{
+			.margin(9px 0);
+			>span.head-content{
+				>p.head-en{
+					.margin-tp(-6px);
+				}
+			}
+		}
+		>a.head-links{
+			.top(9px);
+			>img{
+				.height(32px;)
+			}
+		}
+	}
+}
+
+@media screen and (min-width:414px){
+	.head{
+		.head-title{
+			.margin(7.5px 0);
+			>span.head-content{
+				>p.head-en{
+					.margin-tp(-7px);
+				}
+			}
+		}
+		>a.head-links{
+			.top(7.5px);
+			>img{
+				.height(35px;)
+			}
+		}
+	}
+}
+
+.return-animate{
+	animation: returnAnimate .3s ease .5s forwards;
+	-webkit-animation: returnAnimate .3s ease .5s forwards;
+}
+
+@keyframes returnAnimate{
+	0%{
+		.margin-lt(-40px);
+	}
+	100%{
+		.margin-lt(10px);
+	}
+}
+
+@-webkit-keyframes returnAnimate{
+	0%{
+		.margin-lt(-40px);
+	}
+	100%{
+		.margin-lt(10px);
+	}
+}
+
+.return-intial{
+	animation: returnIntial .3s ease forwards;
+	-webkit-animation: returnIntial .3s ease forwards;
+}
+
+@keyframes returnIntial{
+	0%{
+		.margin-lt(10px);
+	}
+	100%{
+		.margin-lt(-40px);
+	}
+}
+
+@-webkit-keyframes returnIntial{
+	0%{
+		.margin-lt(10px);
+	}
+	100%{
+		.margin-lt(-40px);
+	}
+}
+
+.menu-animate{
+	animation: menuAnimate .3s ease forwards;
+	-webkit-animation: menuAnimate .3s ease forwards;
+}
+
+@keyframes menuAnimate{
+	0%{
+		.left(-100%);
+	}
+	100%{
+		.left(0%);
+	}
+}
+
+@-webkit-keyframes menuAnimate{
+	0%{
+		.left(-100%);
+	}
+	100%{
+		.left(0%);
+	}
+}

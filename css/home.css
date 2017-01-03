@@ -1,0 +1,144 @@
+@charset "utf-8";
+/**
+ * head模块的数据定义
+ */
+/**
+ * menu模块的数据定义
+ */
+/**
+ * home模块的数据定义
+ */
+.home {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.home .rotation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.home .rotation > ul.rotation-groups {
+  position: relative;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+}
+.home .rotation > ul.rotation-groups > li {
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
+  -ms-flex: 1;
+  height: 100%;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list > img {
+  width: 100%;
+  height: 100%;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-top {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-top .oneBang-top-pics {
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
+  -ms-flex: 1;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-top .oneBang-top-pics > img {
+  width: 100%;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-top .oneBang-top-word {
+  flex: 2;
+  -webkit-flex: 2;
+  -moz-flex: 2;
+  -o-flex: 2;
+  -ms-flex: 2;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #ffffff;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-top .oneBang-top-word > p {
+  font-size: 18px;
+  color: #ffffff;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom {
+  width: 100%;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-word {
+  color: #ffffff;
+  font-size: 20px;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform {
+  width: 100%;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p {
+  display: inline-block;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p > img,
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p > span {
+  vertical-align: middle;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p > img {
+  width: 16px;
+  margin-right: 6px;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p > span {
+  color: #8c8abb;
+  font-size: 20px;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p:first-child {
+  margin-right: 24px;
+}
+.home .rotation > ul.rotation-small {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  margin-left: -24px;
+}
+.home .rotation > ul.rotation-small > li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+}
+.home .rotation > ul.rotation-small > li:first-child {
+  margin-right: 10px;
+}
+.home .rotation > ul.rotation-small > li.on {
+  background-color: #29a7e1;
+}

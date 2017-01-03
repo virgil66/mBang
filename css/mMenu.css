@@ -1,0 +1,268 @@
+@charset "utf-8";
+/**
+ * head模块的数据定义
+ */
+/**
+ * menu模块的数据定义
+ */
+/**
+ * home模块的数据定义
+ */
+.head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #e4e4e6;
+}
+.head .head-title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.head .head-title > img,
+.head .head-title > span.head-content {
+  vertical-align: middle;
+}
+.head .head-title > img {
+  margin-right: 8px;
+  width: 28px;
+}
+.head .head-title > span.head-content {
+  display: inline-block;
+  text-align: left;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #ffffff;
+  padding-left: 8px;
+  box-sizing: border-box;
+}
+.head .head-title > span.head-content > p {
+  color: #10307d;
+}
+.head .head-title > span.head-content > p.head-ch {
+  font-size: 16px;
+}
+.head .head-title > span.head-content > p.head-en {
+  font-size: 12px;
+}
+.head > a.head-links {
+  display: inline-block;
+  position: absolute;
+  left: 18px;
+}
+nav.menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+}
+nav.menu .menu-head {
+  width: 100%;
+  height: 43px;
+  background-color: #272727;
+  *zoom: 1;
+}
+nav.menu .menu-head:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav.menu .menu-head > img {
+  height: 36px;
+}
+nav.menu .menu-head > img.menu-head-return {
+  float: left;
+  display: inline;
+  margin: 3.5px 0 3.5px -40px;
+}
+nav.menu .menu-head > img.menu-head-close {
+  float: right;
+  display: inline;
+  margin: 3.5px 10px 3.5px 0;
+}
+nav.menu .menu-main {
+  width: 100%;
+  height: 100%;
+}
+nav.menu .menu-main > ul.menu-primary > li > a.menu-item {
+  display: block;
+  font-weight: 400;
+  padding: 28px 15px 28px 20px;
+  box-sizing: border-box;
+}
+nav.menu .menu-main > ul.menu-primary > li > a.menu-item > img,
+nav.menu .menu-main > ul.menu-primary > li > a.menu-item > span {
+  vertical-align: middle;
+}
+nav.menu .menu-main > ul.menu-primary > li > a.menu-item > img {
+  width: 22px;
+  margin-right: 20px;
+}
+nav.menu .menu-main > ul.menu-primary > li > a.menu-item > span {
+  font-size: 22px;
+  color: #ffffff;
+}
+nav.menu .menu-main > ul.menu-primary > li > a.menu-item > i.next {
+  display: inline-block;
+  float: right;
+  display: inline;
+  margin-top: 5px;
+}
+nav.menu .menu-main > ul.menu-primary > li > a.menu-item > i.next > img {
+  width: 10px;
+}
+@media screen and (max-width: 319px) {
+  .head .head-title {
+    margin: 11.5px 0;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -5px;
+  }
+  .head > a.head-links {
+    top: 11.5px;
+  }
+  .head > a.head-links > img {
+    height: 27px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item {
+    padding: 20px 15px 20px 20px;
+    box-sizing: border-box;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > img {
+    width: 22px;
+    margin-right: 20px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > span {
+    font-size: 22px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > i.next {
+    margin-top: 5px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > i.next > img {
+    width: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .head .head-title {
+    margin: 11.5px 0;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -5px;
+  }
+  .head > a.head-links {
+    top: 11.5px;
+  }
+  .head > a.head-links > img {
+    height: 27px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item {
+    padding: 20px 15px 20px 20px;
+    box-sizing: border-box;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > img {
+    width: 22px;
+    margin-right: 20px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > span {
+    font-size: 22px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > i.next {
+    margin-top: 5px;
+  }
+  nav.menu .menu-main > ul.menu-primary > li > a.menu-item > i.next > img {
+    width: 10px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .head .head-title {
+    margin: 9px 0;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -6px;
+  }
+  .head > a.head-links {
+    top: 9px;
+  }
+  .head > a.head-links > img {
+    height: 32px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .head .head-title {
+    margin: 7.5px 0;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -7px;
+  }
+  .head > a.head-links {
+    top: 7.5px;
+  }
+  .head > a.head-links > img {
+    height: 35px;
+  }
+}
+.return-animate {
+  animation: returnAnimate .3s ease .5s forwards;
+  -webkit-animation: returnAnimate .3s ease .5s forwards;
+}
+@keyframes returnAnimate {
+  0% {
+    margin-left: -40px;
+  }
+  100% {
+    margin-left: 10px;
+  }
+}
+@-webkit-keyframes returnAnimate {
+  0% {
+    margin-left: -40px;
+  }
+  100% {
+    margin-left: 10px;
+  }
+}
+.return-intial {
+  animation: returnIntial .3s ease forwards;
+  -webkit-animation: returnIntial .3s ease forwards;
+}
+@keyframes returnIntial {
+  0% {
+    margin-left: 10px;
+  }
+  100% {
+    margin-left: -40px;
+  }
+}
+@-webkit-keyframes returnIntial {
+  0% {
+    margin-left: 10px;
+  }
+  100% {
+    margin-left: -40px;
+  }
+}
+.menu-animate {
+  animation: menuAnimate .3s ease forwards;
+  -webkit-animation: menuAnimate .3s ease forwards;
+}
+@keyframes menuAnimate {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@-webkit-keyframes menuAnimate {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}

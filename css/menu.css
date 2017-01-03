@@ -1,0 +1,94 @@
+@charset "utf-8";
+/**
+ * head模块的数据定义
+ */
+.head {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #e4e4e6;
+}
+.head .head-title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.head .head-title > img {
+  margin-right: 8px;
+}
+.head .head-title > span.head-content {
+  display: inline-block;
+  text-align: left;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #ffffff;
+  padding-left: 8px;
+  box-sizing: border-box;
+}
+.head .head-title > span.head-content > p {
+  color: #10307d;
+}
+.head > a.head-links {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 319px) {
+  .head .head-title {
+    margin: 11.5px 0;
+  }
+  .head .head-title > img {
+    width: 20px;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -5px;
+  }
+  .head > a.head-links > img {
+    height: 27px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .head .head-title {
+    margin: 11.5px 0;
+  }
+  .head .head-title > img {
+    width: 22px;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -5px;
+  }
+  .head > a.head-links > img {
+    height: 27px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .head .head-title {
+    margin: 9px 0;
+  }
+  .head .head-title > img {
+    width: 26px;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -6px;
+  }
+  .head > a.head-links > img {
+    height: 32px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .head .head-title {
+    margin: 7.5px 0;
+  }
+  .head .head-title > img {
+    width: 28px;
+  }
+  .head .head-title > span.head-content > p.head-en {
+    margin-top: -7px;
+  }
+  .head > a.head-links > img {
+    height: 35px;
+  }
+}
