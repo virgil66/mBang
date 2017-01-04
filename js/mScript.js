@@ -30,7 +30,7 @@
 		$(this)
 			.addClass('return-intial')
 			.removeClass('return-animate');
-	})
+	});
 
 	$item.on('click',function(e){
 		e.preventDefault();
@@ -43,5 +43,26 @@
 				.addClass('return-animate')
 				.removeClass('return-intial');
 		}
+	});
+
+
+	/**
+	 * home
+	 */
+	var $home = $('.home');
+	var $videoBg = $home.find('.design .design-video .design-video-bg');
+	var $video = $home.find('.design .design-video >video');
+
+	//点击视频分面，播放视屏
+	$videoBg.on('click',function(e){
+		e.preventDefault();
+		$(this).hide();
+		$video[0].play();
+	});
+
+	$video.on('click',function(e){
+		e.preventDefault();
+		$video[0].pause();
+		$videoBg.show();
 	})
 })(jQuery);

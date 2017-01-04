@@ -39,5 +39,35 @@
 			.addClass('opacity-animate');
 	};
 	
-	// console.log(innerW)
+	var design = home.find('.design');
+	$(window).scroll(function(event) {
+		var wTop = $(window).scrollTop();
+		if(wTop > 0){
+			if(innerH <= 480){
+				design
+					.addClass('fade-in')
+					.find('.example-img >img')
+					.addClass('opacity-animate')
+					.parent()
+					.siblings('.example-content')
+					.find('h1')
+					.addClass('fade-in')
+					.siblings('p')
+					.addClass('fade-in-up-1');
+			}else if(innerH > 480){
+				design
+					.addClass('fade-in')
+					.find('.example-img >img')
+					.addClass('opacity-animate')
+					.parent()
+					.siblings('.example-content')
+					.find('h1')
+					.addClass('fade-in')
+					.siblings('p')
+					.addClass('fade-in-up');
+			}
+		}
+		// console.log($(window).scrollTop());
+	});
+	
 })(jQuery);
