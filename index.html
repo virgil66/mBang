@@ -22,9 +22,11 @@
 									<img src="images/index_icon_logo.png" alt="壹帮帮" class="" />
 								</div>
 								<div class="oneBang-top-word">
-									<p>壹个综合化的商业平台</p>
-									<p>汇聚一帮专业人才及资源</p>
-									<p>帮您解决关于店铺的所有事</p>
+									<div class="oneBang-animate">
+										<p>壹个综合化的商业平台</p>
+										<p>汇聚一帮专业人才及资源</p>
+										<p>帮您解决关于店铺的所有事</p>
+									</div>
 								</div>
 							</div>
 							<div class="oneBang-bottom">
@@ -60,16 +62,17 @@
 	<script src="js/mMenu.js"></script>
 	<script src="js/mScript.js"></script>
 	<script src="js/rotation.js"></script>
+	<script src="js/animate.js"></script>
 	<script>
-		// (function(){
-		// 	var scrollImg = $.mggScrollImg('.rotation .rotation-groups',{
-		// 	        loop : true,//循环切换
-		// 	        auto : false,//自动切换
-		// 	        callback : function(ind){//这里传过来的是索引值
-		// 	            $('.rotation-small li').eq(ind).addClass('on').siblings('li').removeClass('on');
-		// 	        }
-		// 	    });
-		// })();
+		(function(){
+			var scrollImg = $.mggScrollImg('.rotation .rotation-groups',{
+			        loop : true,//循环切换
+			        auto : false,//自动切换
+			        callback : function(ind){//这里传过来的是索引值
+			            $('.rotation-small li').eq(ind).addClass('on').siblings('li').removeClass('on');
+			        }
+			    });
+		})();
 	</script>
 </body>
 </html>
