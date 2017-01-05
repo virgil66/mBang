@@ -24,6 +24,9 @@
 							+"<img src='images/index_icon_logo.png' alt='壹帮帮' />"
 						+"</div>"
 					+"</div>"
-				+"</footer>");
+				+"</footer>"
+				+"<div class='return-top'>"
+					+"<img src='images/return_top.png' alt='返回顶部' />"
+				+"</div>");
 	$('body').append(footer);
 })(jQuery);
