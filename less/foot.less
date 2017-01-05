@@ -1,0 +1,280 @@
+@charset "utf-8";
+@import "common";
+@import "mData";
+
+footer.footer{
+	.width-max();
+	.bgColor(#dddddd);
+	.footer-head{
+		.width-max();
+		.border-bm(1px,solid,#6089c1);
+		>div{
+			vertical-align: middle;
+		}
+		.footerlinks{
+			.display(ib);
+			>a{
+				.display(ib);
+			}
+			>a.company-address{
+				.border-lt(1px,solid,#a7a7a7);
+				.border-rt(1px,solid,#a7a7a7);
+			}
+		}
+		.footer-icon{
+			.display(ib);
+			>a{
+				.display(ib);
+			}
+		}
+	}
+	.footer-main{
+		.footer-main-content{
+			.display(ib);
+			>p.oneBang-links{
+				.color(#898989);
+				>a{
+					.color(#898989);
+				}
+			}
+			>p.oneBang-copy{
+				.color(#a4a6a5);
+			}
+		}
+		.footer-main-pics{
+			.fr();
+			.display(ib);
+			>img{
+				.width-max();
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 374px){
+	footer.footer{
+		.padding(0 27px 45px);
+		.footer-head{
+			.padding-tp(20px);
+			.padding-bm(10px);
+			.footerlinks{
+				.width(182px);
+				.margin-bm(4px);
+				>a{
+					.fontSize(12px);
+				}
+				>a.about-us{
+					.padding-rt(8px);
+				}
+				>a.company-address{
+					.padding(0 8px);
+				}
+				>a.recurit-talent{
+					.padding-lt(8px);
+				}
+			}
+			.footer-icon{
+				>a{
+					>img{
+						.width(20px);
+					}
+					>img.footer-wechat{
+						.margin-lt(8px);
+					}
+					>img.footer-qq{
+						.margin(0 8px);
+					}
+				}
+			}
+		}
+		.footer-main{
+			.padding-tp(10px);
+			.footer-main-content{
+				.width(220px);
+				>p.oneBang-links{
+					.fontSize(12px);
+					>a{
+						.fontSize(12px);
+					}
+				}
+				>p.oneBang-copy{
+					.fontSize(12px);
+				}
+			}
+			.footer-main-pics{
+				.width(30px);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px){
+	footer.footer{
+		.padding(0 32px 56px);
+		.footer-head{
+			.padding-tp(28px);
+			.padding-bm(14px);
+			.footerlinks{
+				.width(210px);
+				.margin-bm(4px);
+				>a{
+					.fontSize(14px);
+				}
+				>a.about-us{
+					.padding-rt(8px);
+				}
+				>a.company-address{
+					.padding(0 8px);
+				}
+				>a.recurit-talent{
+					.padding-lt(8px);
+				}
+			}
+			.footer-icon{
+				>a{
+					>img{
+						.width(24px);
+					}
+					>img.footer-wechat{
+						.margin-lt(8px);
+					}
+					>img.footer-qq{
+						.margin(0 8px);
+					}
+				}
+			}
+		}
+		.footer-main{
+			.padding-tp(14px);
+			.footer-main-content{
+				.width(258px);
+				>p.oneBang-links{
+					.fontSize(14px);
+					>a{
+						.fontSize(14px);
+					}
+				}
+				>p.oneBang-copy{
+					.fontSize(14px);
+				}
+			}
+			.footer-main-pics{
+				.width(42px);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+	footer.footer{
+		.padding(0 32px 56px);
+		.footer-head{
+			.padding-tp(32px);
+			.padding-bm(16px);
+			.footerlinks{
+				.width(250px);
+				.margin-bm(4px);
+				>a{
+					.fontSize(16px);
+				}
+				>a.about-us{
+					.padding-rt(12px);
+				}
+				>a.company-address{
+					.padding(0 12px);
+				}
+				>a.recurit-talent{
+					.padding-lt(12px);
+				}
+			}
+			.footer-icon{
+				>a{
+					>img{
+						.width(24px);
+					}
+					>img.footer-wechat{
+						.margin-lt(8px);
+					}
+					>img.footer-qq{
+						.margin(0 8px);
+					}
+				}
+			}
+		}
+		.footer-main{
+			.padding-tp(16px);
+			.footer-main-content{
+				.width(294px);
+				>p.oneBang-links{
+					.fontSize(16px);
+					>a{
+						.fontSize(16px);
+					}
+				}
+				>p.oneBang-copy{
+					.fontSize(16px);
+				}
+			}
+			.footer-main-pics{
+				.width(48px);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px){
+	footer.footer{
+		.padding(0 81px 100px);
+		.footer-head{
+			.padding-tp(48px);
+			.padding-bm(18px);
+			.footerlinks{
+				.width(340px);
+				.margin-bm(4px);
+				>a{
+					.fontSize(21px);
+				}
+				>a.about-us{
+					.padding-rt(18px);
+				}
+				>a.company-address{
+					.padding(0 18px);
+				}
+				>a.recurit-talent{
+					.padding-lt(18px);
+				}
+			}
+			.footer-icon{
+				>a{
+					>img{
+						.width(32px);
+					}
+					>img.footer-wechat{
+						.margin-lt(14px);
+					}
+					>img.footer-qq{
+						.margin(0 14px);
+					}
+				}
+			}
+		}
+		.footer-main{
+			.padding-tp(18px);
+			.footer-main-content{
+				.width(504px);
+				>p.oneBang-links{
+					.fontSize(21px);
+					>a{
+						.fontSize(21px);
+					}
+				}
+				>p.oneBang-copy{
+					.fontSize(21px);
+				}
+			}
+			.footer-main-pics{
+				.width(62px);
+			}
+		}
+	}
+}
