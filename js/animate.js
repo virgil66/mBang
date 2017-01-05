@@ -43,6 +43,7 @@
 	var design = home.find('.design');
 	var appInroduce = home.find('.appInroduce');
 	var appService = home.find('.appService');
+	var news = home.find('.news');
 	$(window).scroll(function(event) {
 		var wTop = $(window).scrollTop();
 		if(wTop > 0 && wTop <= design.offset().top){
@@ -79,12 +80,12 @@
 					.addClass('fade-in')
 					.siblings('a')
 					.addClass('fade-in-up')
-					.parents('.description');
-					// .siblings('.series')
-					// .find('.series-content >h3')
-					// .addClass('fade-in-up-3')
-					// .siblings('p')
-					// .addClass('fade-in');
+					.parents('.description')
+					.siblings('.series')
+					.find('.series-content >h3')
+					.addClass('fade-in-up-3')
+					.siblings('p')
+					.addClass('fade-in');
 			}else if(innerH > 480){
 				appInroduce
 					.addClass('fade-in')
@@ -94,16 +95,17 @@
 					.addClass('fade-in')
 					.siblings('a')
 					.addClass('fade-in-up-2')
-					.parents('.description');
-					// .siblings('.series')
-					// .find('.series-content >h3')
-					// .addClass('fade-in-up-3')
-					// .siblings('p')
-					// .addClass('fade-in');
+					.parents('.description')
+					.siblings('.series')
+					.find('.series-content >h3')
+					.addClass('fade-in-up-3')
+					.siblings('p')
+					.addClass('fade-in');
 			}
 		}else if(wTop > appInroduce.offset().top && wTop <= appService.offset().top){
 			if(innerH <= 480){
 				appService
+					.addClass('fade-in')
 					.find('.service-pics')
 					.find('.pics-img-1')
 					.addClass('top-series-1')
@@ -123,6 +125,7 @@
 					.addClass('fade-in-up-4');
 			}else if(innerH >480 && innerH <= 736){
 				appService
+					.addClass('fade-in')
 					.find('.service-pics')
 					.find('.pics-img-1')
 					.addClass('top-series-1-1')
@@ -142,6 +145,7 @@
 					.addClass('fade-in-up-4');
 			}else if(innerH > 736){
 				appService
+					.addClass('fade-in')
 					.find('.service-pics')
 					.find('.pics-img-1')
 					.addClass('top-series-1-2')
@@ -161,6 +165,19 @@
 					.addClass('fade-in-up-4');
 			}
 			
+		}else if(wTop > appService.offset().top && wTop <= news.offset().top){
+			news
+				.addClass('fade-in')
+				.find('.news-icon >img')
+				.addClass('opacity-animate')
+				.parent()
+				.siblings('.news-content')
+				.find('>h1')
+				.addClass('fade-in')
+				.siblings('.news-groups')
+				.addClass('fade-in')
+				.siblings('.news-groups-last')
+				.addClass('news-animate');
 		}
 		// console.log($(window).scrollTop());
 		// console.log($('.design').offset().top);

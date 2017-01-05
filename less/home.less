@@ -268,6 +268,7 @@
 		}
 	}
 	.appService{
+		.opa(0);
 		.width-max();
 		.bgColor(@white);
 		>div{
@@ -334,6 +335,50 @@
 				>p{
 					.color(#888888);
 				}
+			}
+		}
+	}
+	.news{
+		.opa(0);
+		.width-max();
+		background: linear-gradient(to bottom, #0e6eb8, #122b88);
+		background: -webkit-linear-gradient(to bottom, #0e6eb8, #122b88);
+		.display(f);
+		-webkit-flex-flow: column wrap;
+		webkit-flex-flow: column wrap;
+		justify-content: space-between;
+		-webkit-justify-content: space-between;
+		>div{
+			.width-max();
+		}
+		.news-icon{
+			>img{
+				vertical-align: middle;
+				transform: scale(0);
+				-webkit-transform: scale(0);
+			}
+		}
+		.news-content{
+			>h1{
+				text-transform: uppercase;
+				.color(#f6f8f7);
+				.opa(0);
+				animation-delay: .8s;
+				-webkit-animation-delay: .8s;
+			}
+			.news-groups{
+				.opa(0);
+				animation-delay: .8s;
+				-webkit-animation-delay: .8s;
+				>h3{
+					.color(#ebecf1);
+				}
+				>p{
+					.color(#dde0ef);
+				}
+			}
+			.news-groups-last{
+				.margin-bm(45px);
 			}
 		}
 	}
@@ -464,7 +509,7 @@
 			.design-example{
 				.height(215px);
 				.example-img{
-					.padding(12px 0 0 20px);
+					.padding(0px 0 0 20px);
 					>img{
 						.width(81px);
 					}
@@ -560,6 +605,35 @@
 				}
 				.service-item{
 					.margin-tp(8px);
+					>p{
+						.fontSize(12px);
+					}
+				}
+			}
+		}
+		.news{
+			.height(430px);
+			.padding(0 35px);
+			.news-icon{
+				.padding-tp(35px);
+				>img{
+					.width(40px);
+				}
+				>img.news-qq,
+				>img.news-wechat{
+					.margin-rt(16px);
+				}
+			}
+			.news-content{
+				.padding-bm(35px);
+				>h1{
+					.fontSize(21px);
+				}
+				.news-groups{
+					.margin-tp(8px);
+					>h3{
+						.fontSize(12px);
+					}
 					>p{
 						.fontSize(12px);
 					}
@@ -735,6 +809,35 @@
 				}
 			}
 		}
+		.news{
+			.height(617px);
+			.padding(0 35px);
+			.news-icon{
+				.padding-tp(35px);
+				>img{
+					.width(58px);
+				}
+				>img.news-qq,
+				>img.news-wechat{
+					.margin-rt(16px);
+				}
+			}
+			.news-content{
+				.padding-bm(35px);
+				>h1{
+					.fontSize(32px);
+				}
+				.news-groups{
+					.margin-tp(16px);
+					>h3{
+						.fontSize(16px);
+					}
+					>p{
+						.fontSize(16px);
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -802,7 +905,7 @@
 			.design-example{
 				.height(343px);
 				.example-img{
-					.padding(20px 0 0 36px);
+					.padding(0px 0 0 36px);
 					>img{
 						.width(108px);
 					}
@@ -904,6 +1007,35 @@
 				}
 			}
 		}
+		.news{
+			.height(686px);
+			.padding(0 45px);
+			.news-icon{
+				.padding-tp(45px);
+				>img{
+					.width(72px);
+				}
+				>img.news-qq,
+				>img.news-wechat{
+					.margin-rt(16px);
+				}
+			}
+			.news-content{
+				.padding-bm(45px);
+				>h1{
+					.fontSize(36px);
+				}
+				.news-groups{
+					.margin-tp(16px);
+					>h3{
+						.fontSize(18px);
+					}
+					>p{
+						.fontSize(18px);
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -971,7 +1103,7 @@
 			.design-example{
 				.height(487px);
 				.example-img{
-					.padding(34px 0 0 52px);
+					.padding(0px 0 0 52px);
 					>img{
 						.width(162px);
 					}
@@ -1067,6 +1199,35 @@
 				}
 				.service-item{
 					.margin-tp(24px);
+					>p{
+						.fontSize(28px);
+					}
+				}
+			}
+		}
+		.news{
+			.height(974px);
+			.padding(0 72px);
+			.news-icon{
+				.padding-tp(72px);
+				>img{
+					.width(112px);
+				}
+				>img.news-qq,
+				>img.news-wechat{
+					.margin-rt(16px);
+				}
+			}
+			.news-content{
+				.padding-bm(72px);
+				>h1{
+					.fontSize(56px);
+				}
+				.news-groups{
+					.margin-tp(16px);
+					>h3{
+						.fontSize(28px);
+					}
 					>p{
 						.fontSize(28px);
 					}
@@ -1658,6 +1819,33 @@
 	}
 	100%{
 		.top(45px);
+		.opa(10);
+	}
+}
+
+.news-animate{
+	animation: newsAnimate .8s cubic-bezier(.25,.46,.45,.94) forwards;
+	-webkit-animation: newsAnimate .8s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+@keyframes newsAnimate{
+	0%{
+		.margin-bm(0);
+		.opa(0);
+	}
+	100%{
+		.margin-bm(45px);
+		.opa(10);
+	}
+}
+
+@-webkit-keyframes newsAnimate{
+	0%{
+		.margin-bm(0);
+		.opa(0);
+	}
+	100%{
+		.margin-bm(45px);
 		.opa(10);
 	}
 }
