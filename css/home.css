@@ -679,10 +679,10 @@
     font-size: 21px;
   }
   .home .appService .service-content .service-item {
-    margin-top: 8px;
+    margin-top: 12px;
   }
   .home .appService .service-content .service-item > p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 414px) and (max-width: 767px) {
@@ -798,6 +798,19 @@
   .home .series .series-direction > ul > li:first-child {
     margin-right: 6px;
   }
+  .home .appService .service-content {
+    padding: 0 20px 25px;
+    box-sizing: border-box;
+  }
+  .home .appService .service-content > h1 {
+    font-size: 24px;
+  }
+  .home .appService .service-content .service-item {
+    margin-top: 15px;
+  }
+  .home .appService .service-content .service-item > p {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 768px) {
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
@@ -911,6 +924,19 @@
   }
   .home .series .series-direction > ul > li:first-child {
     margin-right: 16px;
+  }
+  .home .appService .service-content {
+    padding: 0 40px 45px;
+    box-sizing: border-box;
+  }
+  .home .appService .service-content > h1 {
+    font-size: 42px;
+  }
+  .home .appService .service-content .service-item {
+    margin-top: 24px;
+  }
+  .home .appService .service-content .service-item > p {
+    font-size: 28px;
   }
 }
 .opacity-animate {

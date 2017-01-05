@@ -154,18 +154,70 @@
 	<!-- <script src="js/fontSize.js"></script> -->
 	<script src="js/mMenu.js"></script>
 	<script src="js/mScript.js"></script>
-	<script src="js/rotation.js"></script>
+	<!-- <script src="js/rotation.js"></script> -->
 	<script src="js/animate.js"></script>
 	<script>
-		(function(){
-			var scrollImg = $.mggScrollImg('.rotation .rotation-groups',{
-			        loop : true,//循环切换
-			        auto : false,//自动切换
-			        callback : function(ind){//这里传过来的是索引值
-			            $('.rotation-small li').eq(ind).addClass('on').siblings('li').removeClass('on');
-			        }
-			    });
-		})();
+		// (function(){
+		// 	var scrollImg = $.mggScrollImg('.rotation .rotation-groups',{
+		// 	        loop : true,//循环切换
+		// 	        auto : false,//自动切换
+		// 	        callback : function(ind){//这里传过来的是索引值
+		// 	            $('.rotation-small li').eq(ind).addClass('on').siblings('li').removeClass('on');
+		// 	        }
+		// 	    });
+		// })();
+		$(document).ready(function(){
+			////////////////////
+			// 移动端手指滑动实现图片的轮播、首页 //
+			////////////////////
+			var m_iNow = 0, m_index = 1, m_startX = 0;
+			var rotation = document.getElementById('rotation');
+			var rotationBig = $('#rotation').find('.rotation-groups');
+
+			// 监听touchstart事件
+			rotation.addEventListener('touchstart',function(e){
+				// e.preventDefault();
+				m_startX = e.targetTouches[0].pageX;
+			},false);
+
+			// 监听touchend事件
+			rotation.addEventListener('touchend',function(e){
+				// e.preventDefault();
+				var m_width = $('.rotation').width();   //获取可视化区域的宽度
+				var _l = m_width + $('.rotation-groups').position().left%m_width,
+					_w = m_width / 2,
+					_m = $('.rotation-groups >li').length - 1;
+				var m_left = $('.rotation-groups').position().left;   //重新获取left的值
+				// 中点判断
+				if(_l <= _w){
+					m_left = m_left - _l;
+				}else{
+					m_left = m_left + (m_width - _l);
+				}
+				if(m_left >= 0){
+					m_left = 0;
+				}else if(m_left < -m_width * _m){
+					m_left = -m_width * _m;
+				}
+				
+				$('.rotation-groups').animate({
+					left: m_left
+				},200);
+				var _now = parseInt(-m_left/m_width);
+				$('.rotation').find('.rotation-small >li').eq(_now).addClass('on').siblings('li').removeClass('on');
+				
+			},false);
+
+			rotation.addEventListener('touchmove',function(e){
+				// e.preventDefault();
+				var touch = e.targetTouches[0];
+				var _l = $('.rotation-groups').position().left + touch.pageX - m_startX;
+				m_startX = touch.pageX;
+				$('.rotation-groups').css({
+					left: _l
+				});
+			},false);
+		});
 	</script>
 </body>
 </html>

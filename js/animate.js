@@ -152,7 +152,13 @@
 					.siblings('.pics-img-4')
 					.addClass('top-series-4-2')
 					.siblings('.pics-img-5')
-					.addClass('top-series-5-2');
+					.addClass('top-series-5-2')
+					.parent()
+					.siblings('.service-content')
+					.find('h1')
+					.addClass('fade-in')
+					.siblings('.service-item')
+					.addClass('fade-in-up-4');
 			}
 			
 		}
