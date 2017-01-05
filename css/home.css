@@ -472,6 +472,9 @@
   color: #dde0ef;
 }
 @media screen and (max-width: 374px) {
+  .home .rotation {
+    height: 430px;
+  }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
     bottom: 20px;
     padding: 0 20px;
@@ -518,6 +521,12 @@
   .home .rotation > ul.rotation-small > li:first-child {
     margin-right: 10px;
   }
+  .home .design {
+    height: 430px;
+  }
+  .home .design .design-example {
+    height: 215px;
+  }
   .home .design .design-example .example-img {
     padding: 0px 0 0 20px;
     box-sizing: border-box;
@@ -539,6 +548,15 @@
     font-size: 12px;
     margin-top: 6px;
   }
+  .home .design .design-video {
+    height: 215px;
+  }
+  .home .appInroduce {
+    height: 480px;
+  }
+  .home .appInroduce .description {
+    height: 190px;
+  }
   .home .appInroduce .description > h1 {
     font-size: 18px;
   }
@@ -552,6 +570,9 @@
     line-height: 24px;
     font-size: 14px;
     margin-top: 8px;
+  }
+  .home .appInroduce .series {
+    height: 290px;
   }
   .home .appInroduce .series .series-coat .series-groups > li > a.series-item .series-content {
     height: 48px;
@@ -584,7 +605,14 @@
   .home .appInroduce .series .series-direction > ul > li:first-child {
     margin-right: 6px;
   }
+  .home .appService {
+    height: 430px;
+  }
+  .home .appService .service-pics {
+    height: 215px;
+  }
   .home .appService .service-content {
+    height: 215px;
     padding: 0 12px 15px;
     box-sizing: border-box;
   }
@@ -598,6 +626,7 @@
     font-size: 12px;
   }
   .home .news {
+    height: 430px;
     padding: 0 35px;
     box-sizing: border-box;
   }
@@ -630,6 +659,9 @@
   }
 }
 @media screen and (min-width: 375px) and (max-width: 413px) {
+  .home .rotation {
+    height: 617px;
+  }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
     bottom: 22px;
     padding: 0 20px;
@@ -676,6 +708,12 @@
   .home .rotation > ul.rotation-small > li:first-child {
     margin-right: 10px;
   }
+  .home .design {
+    height: 617px;
+  }
+  .home .design .design-example {
+    height: 308px;
+  }
   .home .design .design-example .example-img {
     padding: 0px 0 0 32px;
     box-sizing: border-box;
@@ -697,6 +735,15 @@
     font-size: 16px;
     margin-top: 10px;
   }
+  .home .design .design-video {
+    height: 308px;
+  }
+  .home .appInroduce {
+    height: 667px;
+  }
+  .home .appInroduce .description {
+    height: 303px;
+  }
   .home .appInroduce .description > h1 {
     font-size: 28px;
   }
@@ -710,6 +757,9 @@
     line-height: 46px;
     font-size: 18px;
     margin-top: 16px;
+  }
+  .home .appInroduce .series {
+    height: 364px;
   }
   .home .appInroduce .series .series-coat .series-groups > li > a.series-item .series-content {
     height: 60px;
@@ -742,7 +792,14 @@
   .home .appInroduce .series .series-direction > ul > li:first-child {
     margin-right: 6px;
   }
+  .home .appService {
+    height: 617px;
+  }
+  .home .appService .service-pics {
+    height: 308px;
+  }
   .home .appService .service-content {
+    height: 308px;
     padding: 0 16px 18px;
     box-sizing: border-box;
   }
@@ -756,6 +813,7 @@
     font-size: 16px;
   }
   .home .news {
+    height: 617px;
     padding: 0 35px;
     box-sizing: border-box;
   }
@@ -788,6 +846,9 @@
   }
 }
 @media screen and (min-width: 414px) and (max-width: 767px) {
+  .home .rotation {
+    height: 686px;
+  }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
     bottom: 20px;
     padding: 0 20px;
@@ -834,6 +895,12 @@
   .home .rotation > ul.rotation-small > li:first-child {
     margin-right: 10px;
   }
+  .home .design {
+    height: 686px;
+  }
+  .home .design .design-example {
+    height: 343px;
+  }
   .home .design .design-example .example-img {
     padding: 0px 0 0 36px;
     box-sizing: border-box;
@@ -855,6 +922,15 @@
     font-size: 18px;
     margin-top: 10px;
   }
+  .home .design .design-video {
+    height: 343px;
+  }
+  .home .appInroduce {
+    height: 736px;
+  }
+  .home .appInroduce .description {
+    height: 330px;
+  }
   .home .appInroduce .description > h1 {
     font-size: 32px;
   }
@@ -868,6 +944,9 @@
     line-height: 60px;
     font-size: 22px;
     margin-top: 16px;
+  }
+  .home .appInroduce .series {
+    height: 406px;
   }
   .home .appInroduce .series .series-coat .series-groups > li > a.series-item .series-content {
     height: 66px;
@@ -900,7 +979,14 @@
   .home .appInroduce .series .series-direction > ul > li:first-child {
     margin-right: 6px;
   }
+  .home .appService {
+    height: 686px;
+  }
+  .home .appService .service-pics {
+    height: 343px;
+  }
   .home .appService .service-content {
+    height: 343px;
     padding: 0 20px 25px;
     box-sizing: border-box;
   }
@@ -914,6 +1000,7 @@
     font-size: 18px;
   }
   .home .news {
+    height: 686px;
     padding: 0 45px;
     box-sizing: border-box;
   }
@@ -946,6 +1033,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .home .rotation {
+    height: 974px;
+  }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
     bottom: 36px;
     padding: 0 20px;
@@ -992,6 +1082,12 @@
   .home .rotation > ul.rotation-small > li:first-child {
     margin-right: 10px;
   }
+  .home .design {
+    height: 974px;
+  }
+  .home .design .design-example {
+    height: 487px;
+  }
   .home .design .design-example .example-img {
     padding: 0px 0 0 52px;
     box-sizing: border-box;
@@ -1013,6 +1109,15 @@
     font-size: 28px;
     margin-top: 15px;
   }
+  .home .design .design-video {
+    height: 487px;
+  }
+  .home .appInroduce {
+    height: 1024px;
+  }
+  .home .appInroduce .description {
+    height: 380px;
+  }
   .home .appInroduce .description > h1 {
     font-size: 52px;
   }
@@ -1026,6 +1131,9 @@
     line-height: 82px;
     font-size: 30px;
     margin-top: 14px;
+  }
+  .home .appInroduce .series {
+    height: 644px;
   }
   .home .appInroduce .series .series-coat .series-groups > li > a.series-item .series-content {
     height: 124px;
@@ -1058,7 +1166,14 @@
   .home .appInroduce .series .series-direction > ul > li:first-child {
     margin-right: 16px;
   }
+  .home .appService {
+    height: 974px;
+  }
+  .home .appService .service-pics {
+    height: 487px;
+  }
   .home .appService .service-content {
+    height: 487px;
     padding: 0 40px 45px;
     box-sizing: border-box;
   }
@@ -1072,6 +1187,7 @@
     font-size: 28px;
   }
   .home .news {
+    height: 974px;
     padding: 0 72px;
     box-sizing: border-box;
   }

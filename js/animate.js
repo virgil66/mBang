@@ -8,46 +8,46 @@
 		mHeight = innerW - 50;
 	}
 
-	$('.home')
-		.find('.rotation')
-		.css({
-			height: mHeight
-		})
-		.siblings('.design')
-		.css({
-			height: mHeight
-		})
-		.find('>div')
-		.css({
-			height: mHeight / 2
-		})
-		.parent()
-		.siblings('.appInroduce')
-		.css({
-			height: mHeight
-		})
-		.find('.description')
-		.css({
-			height: mHeight * 0.39
-		})
-		.siblings('.series')
-		.css({
-			height: mHeight * 0.61
-		})
-		.parent()
-		.siblings('.appService')
-		.css({
-			height: mHeight
-		})
-		.find('>div')
-		.css({
-			height: mHeight / 2
-		})
-		.parent()
-		.siblings('.news')
-		.css({
-			height: mHeight
-		});
+	// $('.home')
+	// 	.find('.rotation')
+	// 	.css({
+	// 		height: mHeight
+	// 	})
+	// 	.siblings('.design')
+	// 	.css({
+	// 		height: mHeight
+	// 	})
+	// 	.find('>div')
+	// 	.css({
+	// 		height: mHeight / 2
+	// 	})
+	// 	.parent()
+	// 	.siblings('.appInroduce')
+	// 	.css({
+	// 		height: mHeight
+	// 	})
+	// 	.find('.description')
+	// 	.css({
+	// 		height: mHeight * 0.39
+	// 	})
+	// 	.siblings('.series')
+	// 	.css({
+	// 		height: mHeight * 0.61
+	// 	})
+	// 	.parent()
+	// 	.siblings('.appService')
+	// 	.css({
+	// 		height: mHeight
+	// 	})
+	// 	.find('>div')
+	// 	.css({
+	// 		height: mHeight / 2
+	// 	})
+	// 	.parent()
+	// 	.siblings('.news')
+	// 	.css({
+	// 		height: mHeight
+	// 	});
 	/**
 	 * home动态效果
 	 */
