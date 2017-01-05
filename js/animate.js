@@ -79,12 +79,12 @@
 					.addClass('fade-in')
 					.siblings('a')
 					.addClass('fade-in-up')
-					.parents('.description')
-					.siblings('.series')
-					.find('.series-content >h3')
-					.addClass('fade-in-up-3')
-					.siblings('p')
-					.addClass('fade-in');
+					.parents('.description');
+					// .siblings('.series')
+					// .find('.series-content >h3')
+					// .addClass('fade-in-up-3')
+					// .siblings('p')
+					// .addClass('fade-in');
 			}else if(innerH > 480){
 				appInroduce
 					.addClass('fade-in')
@@ -94,12 +94,12 @@
 					.addClass('fade-in')
 					.siblings('a')
 					.addClass('fade-in-up-2')
-					.parents('.description')
-					.siblings('.series')
-					.find('.series-content >h3')
-					.addClass('fade-in-up-3')
-					.siblings('p')
-					.addClass('fade-in');
+					.parents('.description');
+					// .siblings('.series')
+					// .find('.series-content >h3')
+					// .addClass('fade-in-up-3')
+					// .siblings('p')
+					// .addClass('fade-in');
 			}
 		}else if(wTop > appInroduce.offset().top && wTop <= appService.offset().top){
 			if(innerH <= 480){
