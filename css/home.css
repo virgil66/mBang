@@ -636,7 +636,7 @@
     height: 308px;
   }
   .home .design .design-example .example-img {
-    padding: 18px 0 0 32px;
+    padding: 0px 0 0 32px;
     box-sizing: border-box;
   }
   .home .design .design-example .example-img > img {
