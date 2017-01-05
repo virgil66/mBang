@@ -429,7 +429,7 @@
     height: 430px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
-    bottom: 24px;
+    bottom: 20px;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -448,7 +448,7 @@
     font-size: 12px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-word {
-    font-size: 14px;
+    font-size: 12px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform {
     margin-top: 3px;
@@ -458,13 +458,13 @@
     margin-right: 6px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p > span {
-    font-size: 14px;
+    font-size: 12px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p:first-child {
     margin-right: 24px;
   }
   .home .rotation > ul.rotation-small {
-    bottom: 10px;
+    bottom: 5px;
     margin-left: -18px;
   }
   .home .rotation > ul.rotation-small > li {
@@ -481,7 +481,7 @@
     height: 215px;
   }
   .home .design .design-example .example-img {
-    padding: 25px 0 0 20px;
+    padding: 12px 0 0 20px;
     box-sizing: border-box;
   }
   .home .design .design-example .example-img > img {
@@ -584,7 +584,7 @@
     height: 617px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
-    bottom: 47px;
+    bottom: 22px;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -619,7 +619,7 @@
     margin-right: 24px;
   }
   .home .rotation > ul.rotation-small {
-    bottom: 24px;
+    bottom: 12px;
     margin-left: -24px;
   }
   .home .rotation > ul.rotation-small > li {
@@ -636,7 +636,7 @@
     height: 308px;
   }
   .home .design .design-example .example-img {
-    padding: 42px 0 0 32px;
+    padding: 18px 0 0 32px;
     box-sizing: border-box;
   }
   .home .design .design-example .example-img > img {
@@ -739,7 +739,7 @@
     height: 686px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
-    bottom: 47px;
+    bottom: 20px;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -774,7 +774,7 @@
     margin-right: 24px;
   }
   .home .rotation > ul.rotation-small {
-    bottom: 24px;
+    bottom: 10px;
     margin-left: -24px;
   }
   .home .rotation > ul.rotation-small > li {
@@ -791,7 +791,7 @@
     height: 343px;
   }
   .home .design .design-example .example-img {
-    padding: 48px 0 0 36px;
+    padding: 20px 0 0 36px;
     box-sizing: border-box;
   }
   .home .design .design-example .example-img > img {
@@ -894,7 +894,7 @@
     height: 974px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang {
-    bottom: 47px;
+    bottom: 36px;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -910,10 +910,10 @@
     box-sizing: border-box;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-top .oneBang-top-word .oneBang-animate {
-    font-size: 34px;
+    font-size: 28px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-word {
-    font-size: 36px;
+    font-size: 28px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform {
     margin-top: 8px;
@@ -923,7 +923,7 @@
     margin-right: 6px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p > span {
-    font-size: 36px;
+    font-size: 28px;
   }
   .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p:first-child {
     margin-right: 24px;
@@ -946,7 +946,7 @@
     height: 487px;
   }
   .home .design .design-example .example-img {
-    padding: 64px 0 0 52px;
+    padding: 34px 0 0 52px;
     box-sizing: border-box;
   }
   .home .design .design-example .example-img > img {
@@ -1103,7 +1103,7 @@
     filter: alpha(opacity=0);
   }
   100% {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     opacity: 1;
     filter: alpha(opacity=10);
   }
@@ -1154,7 +1154,7 @@
 }
 @keyframes fadeInUp_3 {
   0% {
-    margin-top: 45px;
+    margin-top: 25px;
     opacity: 0;
     filter: alpha(opacity=0);
   }
@@ -1166,7 +1166,7 @@
 }
 @-webkit-keyframes fadeInUp_3 {
   0% {
-    margin-top: 45px;
+    margin-top: 25px;
     opacity: 0;
     filter: alpha(opacity=0);
   }
