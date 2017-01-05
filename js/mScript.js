@@ -64,5 +64,53 @@
 		e.preventDefault();
 		$video[0].pause();
 		$videoBg.show();
+	});
+
+	//appIntroduce
+	var $dir = $home.find('.appInroduce .series .series-direction >img');
+
+	var app_flag = -1;
+	$dir.on('click',function(e){
+		e.preventDefault();
+		app_flag++;
+		var moveL = $(this).parent().siblings('.series-coat').find('.series-groups').width() /2 + 36;
+		if(app_flag == 0){
+			$(this)
+				.attr({
+					src: "images/index_app_btn_left.png"
+				})
+				.siblings('ul')
+				.find('li')
+				.eq(1)
+				.addClass('on')
+				.siblings('li')
+				.removeClass('on')
+				.parents('.series-direction')
+				.siblings('.series-coat')
+				.find('.series-groups')
+				.stop()
+				.animate({
+					left:-moveL
+				});
+		}else if(app_flag == 1){
+			$(this)
+				.attr({
+					src: "images/index_app_btn_right.png"
+				})
+				.siblings('ul')
+				.find('li')
+				.eq(0)
+				.addClass('on')
+				.siblings('li')
+				.removeClass('on')
+				.parents('.series-direction')
+				.siblings('.series-coat')
+				.find('.series-groups')
+				.stop()
+				.animate({
+					left:"0"
+				});
+			app_flag = -1;
+		}
 	})
 })(jQuery);
