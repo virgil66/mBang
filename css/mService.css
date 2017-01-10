@@ -1,0 +1,196 @@
+@charset "utf-8";
+/**
+ * head模块的数据定义
+ */
+/**
+ * menu模块的数据定义
+ */
+/**
+ * home模块的数据定义
+ */
+#service {
+  width: 100vw;
+  height: 100vmax;
+  padding-top: 7vmax;
+  box-sizing: border-box;
+}
+.service .service-type {
+  width: 100%;
+  height: 50%;
+  padding: 6vmax 6vmin;
+  box-sizing: border-box;
+}
+.service .service-type .service-belly {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.service .service-type .service-belly .service-head {
+  width: 100%;
+  *zoom: 1;
+}
+.service .service-type .service-belly .service-head:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.service .service-type .service-belly .service-head .service-head-img {
+  float: left;
+  display: inline;
+  width: 40vmin;
+}
+.service .service-type .service-belly .service-head .service-head-img > img {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+.service .service-type .service-belly .service-head .service-head-content {
+  float: left;
+  display: inline;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  margin: 0 0 0 4vmin;
+}
+.service .service-type .service-belly .service-head .service-head-content > h1.head-title {
+  color: #ffffff;
+  font-size: 7vmin;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.service .service-type .service-belly .service-head .service-head-content > a.service-btn {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  display: block;
+  color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  text-align: center;
+  width: 40vmin;
+  height: 10vmin;
+  line-height: 10vmin;
+  font-size: 4vmin;
+  margin-top: 3vmin;
+  box-shadow: 0 0 2px 0px #fff;
+}
+.service .service-type .service-belly .service-content {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 100%;
+  color: #ffffff;
+  font-size: 4vmin;
+  line-height: 1.2em;
+}
+.service .business {
+  background: linear-gradient(to right, #00a9ef, #041955);
+  background: -webkit-linear-gradient(to right, #00a9ef, #041955);
+}
+.service .business .service-head .service-head-img > img {
+  width: 30vmin;
+}
+.service .opration {
+  background: linear-gradient(to right, #6d0087, #9f0085);
+  background: -webkit-linear-gradient(to right, #6d0087, #9f0085);
+}
+.service .opration .service-head .service-head-img > img {
+  width: 40vmin;
+}
+.scale-animate {
+  animation: scaleAnimate 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  -webkit-animation: scaleAnimate 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+@keyframes scaleAnimate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleAnimate {
+  0% {
+    -webkit-transfrom: scale(0);
+  }
+  100% {
+    -webkit-transfrom: scale(1);
+  }
+}
+.fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  -webkit-animation: fadeIn 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=10);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    opacity: 1;
+    filter: alpha(opacity=10);
+  }
+}
+.fade-in-dowm {
+  animation: fadeInDowm 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  -webkit-animation: fadeInDowm 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+@keyframes fadeInDowm {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    margin-top: 2vmax;
+    opacity: 1;
+    filter: alpha(opacity=10);
+  }
+}
+@-webkit-keyframes fadeInDowm {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    margin-top: 2vmax;
+    opacity: 1;
+    filter: alpha(opacity=10);
+  }
+}
+.fade-down {
+  animation: fadeDowm 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  -webkit-animation: fadeDowm 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+@keyframes fadeDowm {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    margin-top: 2vmin;
+    opacity: 1;
+    filter: alpha(opacity=10);
+  }
+}
+@-webkit-keyframes fadeDowm {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  100% {
+    margin-top: 2vmin;
+    opacity: 1;
+    filter: alpha(opacity=10);
+  }
+}

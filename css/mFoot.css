@@ -1,0 +1,167 @@
+@charset "utf-8";
+/**
+ * head模块的数据定义
+ */
+/**
+ * menu模块的数据定义
+ */
+/**
+ * home模块的数据定义
+ */
+footer.footer {
+  width: 100%;
+  background-color: #dddddd;
+  padding: 0 6vmin 8vmax;
+  box-sizing: border-box;
+}
+footer.footer .footer-head {
+  width: 100%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #6089c1;
+  padding: 3vmax 0 2vmax 0;
+  box-sizing: border-box;
+}
+footer.footer .footer-head > div {
+  vertical-align: middle;
+}
+footer.footer .footer-head .footerlinks {
+  display: inline-block;
+}
+footer.footer .footer-head .footerlinks > a {
+  display: inline-block;
+  font-size: 3.5vmin;
+}
+footer.footer .footer-head .footerlinks > a.about-us {
+  padding-right: 3vmin;
+  box-sizing: border-box;
+}
+footer.footer .footer-head .footerlinks > a.company-address {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #a7a7a7;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #a7a7a7;
+  padding: 0 3vmin;
+  box-sizing: border-box;
+}
+footer.footer .footer-head .footerlinks > a.recurit-talent {
+  padding-left: 3vmin;
+  box-sizing: border-box;
+}
+footer.footer .footer-head .footer-icon {
+  display: inline-block;
+}
+footer.footer .footer-head .footer-icon > a {
+  display: inline-block;
+  margin-left: 3vmin;
+}
+footer.footer .footer-head .footer-icon > a > img {
+  width: 6vmin;
+}
+footer.footer .footer-main {
+  position: relative;
+  width: 100%;
+  padding-top: 2vmax;
+  box-sizing: border-box;
+}
+footer.footer .footer-main .footer-main-content {
+  width: 100%;
+  display: inline-block;
+  padding-right: 16vmin;
+  box-sizing: border-box;
+}
+footer.footer .footer-main .footer-main-content > p.oneBang-links {
+  color: #898989;
+  font-size: 3.5vmin;
+}
+footer.footer .footer-main .footer-main-content > p.oneBang-links > a {
+  color: #898989;
+  font-size: 3.5vmin;
+}
+footer.footer .footer-main .footer-main-content > p.oneBang-copy {
+  color: #a4a6a5;
+  font-size: 3.5vmin;
+}
+footer.footer .footer-main .footer-main-pics {
+  position: absolute;
+  right: 0;
+  top: 4vmin;
+  width: 12vmin;
+  display: inline-block;
+}
+footer.footer .footer-main .footer-main-pics > img {
+  width: 100%;
+}
+.return-top {
+  position: fixed;
+  z-index: 2;
+  border-radius: 50%;
+  background-color: #666666;
+  bottom: 0;
+  right: 6vmin;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 12vmin;
+  height: 12vmin;
+}
+.return-top > img {
+  width: 100%;
+}
+.return-top-show {
+  animation: returnTopShow .8s ease forwards;
+  -webkit-animation: returnTopShow .8s ease forwards;
+}
+@keyframes returnTopShow {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    bottom: -46px;
+  }
+  100% {
+    opacity: 0.8;
+    filter: alpha(opacity=8);
+    bottom: 32px;
+  }
+}
+@-webkit-keyframes returnTopShow {
+  0% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    bottom: -46px;
+  }
+  100% {
+    opacity: 0.8;
+    filter: alpha(opacity=8);
+    bottom: 32px;
+  }
+}
+.return-top-hide {
+  animation: returnTopHide .8s ease forwards;
+  -webkit-animation: returnTopHide .8s ease forwards;
+}
+@keyframes returnTopHide {
+  0% {
+    opacity: 0.8;
+    filter: alpha(opacity=8);
+    bottom: 32px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    bottom: -46px;
+  }
+}
+@-webkit-keyframes returnTopHide {
+  0% {
+    opacity: 0.8;
+    filter: alpha(opacity=8);
+    bottom: 32px;
+  }
+  100% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    bottom: -46px;
+  }
+}

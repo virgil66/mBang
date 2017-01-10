@@ -1,0 +1,244 @@
+@charset "utf-8";
+@import "common";
+@import "mData";
+
+
+#help{
+	.width(100vw);
+	.height(100vmax);
+	.padding-tp(7vmax);
+}
+
+.help{
+	.help-type{
+		.width-max();
+		.height(50%);
+		.padding(6vmax 6vmin);
+		.help-belly{
+			.width-max();
+			.height(100%);
+			.overflow();
+			.help-head{
+				.width-max();
+				.clearfix;
+				.help-head-img{
+					.fl();
+					.width(40vmin);
+					>img{
+						transform: scale(0);
+						-webkit-transform: scale(0);
+					}
+				}
+				.help-head-content{
+					.fl();
+					.opa(0);
+					.margin(0 0 0 4vmin);
+					>h1.head-title{
+						.color(@white);
+						.fontSize(7vmin);
+						.opa(0);
+					}
+					>a.help-btn{
+						.opa(0);
+						.display(b);
+						.color(@white);
+						.border(1px,solid,@white);
+						.text-al(center);
+						.width(40vmin);
+						.line-height(10vmin);
+						.fontSize(4vmin);
+						.margin-tp(3vmin);
+						box-shadow: 0 0 2px 0px #fff;
+					}
+				}
+			}
+			.help-content{
+				.opa(0);
+				.width-max();
+				.color(@white);
+				.fontSize(4vmin);
+				line-height: 1.2em;
+			}
+		}
+	}
+	.advisory{
+		background: linear-gradient(to right,#56B8AC,#B5D391);
+		background: -webkit-linear-gradient(to right,#56B8AC,#B5D391);
+		.help-head{
+			.help-head-img{
+				>img{
+					.width(23vmin);
+				}
+			}
+		}
+	}
+	.center{
+		background: linear-gradient(to right,#02A79D,#185D7E);
+		background: -webkit-linear-gradient(to right,#02A79D,#185D7E);
+		.help-head{
+			.help-head-img{
+				>img{
+					.width(26vmin);
+				}
+			}
+		}
+	}
+}
+
+.scale-animate{
+	animation: scaleAnimate .8s cubic-bezier(.25,.46,.45,.94) forwards;
+	-webkit-animation: scaleAnimate .8s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+@keyframes scaleAnimate{
+	0%{
+		transform: scale(0);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+@-webkit-keyframes scaleAnimate{
+	0%{
+		-webkit-transfrom: scale(0);
+	}
+	100%{
+		-webkit-transfrom: scale(1);
+	}
+}
+
+.fade-in{
+	animation: fadeIn .8s cubic-bezier(.25,.46,.45,.94) forwards;
+	-webkit-animation: fadeIn .8s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+@keyframes fadeIn{
+	0%{
+		.opa(0);
+	}
+	100%{
+		.opa(10);
+	}
+}
+
+@-webkit-keyframes fadeIn{
+	0%{
+		.opa(0);
+	}
+	100%{
+		.opa(10);
+	}
+}
+
+.fade-in-dowm{
+	animation: fadeInDowm .8s cubic-bezier(.25,.46,.45,.94) forwards;
+	-webkit-animation: fadeInDowm .8s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+@keyframes fadeInDowm{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(2vmax);
+		.opa(10);
+	}
+}
+
+@-webkit-keyframes fadeInDowm{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(2vmax);
+		.opa(10);
+	}
+}
+
+.fade-down{
+	animation: fadeDowm .8s cubic-bezier(.25,.46,.45,.94) forwards;
+	-webkit-animation: fadeDowm .8s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+@keyframes fadeDowm{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(2vmin);
+		.opa(10);
+	}
+}
+
+@-webkit-keyframes fadeDowm{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(2vmin);
+		.opa(10);
+	}
+}
+
+
+@media only screen and (device-width: 320px) and (device-height: 480px){
+
+}
+
+@media only screen and (device-width: 320px) and (device-height: 568px){
+	
+}
+
+@media screen and (min-width: 321px) and (max-width: 374px){
+	
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px){
+	
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	
+}
+
+@media only screen and (device-width: 1024px) and (device-height: 768px){
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

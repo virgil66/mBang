@@ -1,3 +1,4 @@
+var screenH = screen.height;
 ;(function($){
 	/**
 	 * footer
@@ -25,8 +26,38 @@
 						+"</div>"
 					+"</div>"
 				+"</footer>"
-				+"<div class='return-top'>"
+				+"<div class='return-top' id='return-top'>"
 					+"<img src='images/return_top.png' alt='返回顶部' />"
 				+"</div>");
 	$('body').append(footer);
+
+	var $returnTop = $('.return-top');
+
+	$(window).scroll(function(){
+		var wTop = $(window).scrollTop();
+		if(wTop > screenH){
+			$returnTop
+				.addClass('return-top-show')
+				.removeClass('return-top-hide');
+		}else{
+			$returnTop
+				.addClass('return-top-hide')
+				.removeClass('return-top-show');
+		}
+	});
+
+	$returnTop.on('click',function(e){
+		e.preventDefault();
+		$('html,body')
+			.animate({
+				scrollTop: 0
+			},300);
+	});
+	
+	
+	// console.log(screenH)
 })(jQuery);
+
+
+
+

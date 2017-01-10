@@ -1,0 +1,170 @@
+@charset "utf-8";
+@import "common";
+@import "mData";
+
+footer.footer{
+	.width-max();
+	.bgColor(#dddddd);
+	.padding(0 6vmin 8vmax);
+	.footer-head{
+		.width-max();
+		.border-bm(1px,solid,#6089c1);
+		.padding(3vmax 0 2vmax 0);
+		>div{
+			vertical-align: middle;
+		}
+		.footerlinks{
+			.display(ib);
+			>a{
+				.display(ib);
+				.fontSize(3.5vmin);
+			}
+			>a.about-us{
+				.padding-rt(3vmin);
+			}
+			>a.company-address{
+				.border-lt(1px,solid,#a7a7a7);
+				.border-rt(1px,solid,#a7a7a7);
+				.padding(0 3vmin);
+			}
+			>a.recurit-talent{
+				.padding-lt(3vmin);
+			}
+		}
+		.footer-icon{
+			.display(ib);
+			>a{
+				.display(ib);
+				.margin-lt(3vmin);
+				>img{
+					.width(6vmin);
+				}
+			}
+		}
+	}
+	.footer-main{
+		.pos(rel);
+		.width-max();
+		.padding-tp(2vmax);
+		.footer-main-content{
+			.width-max();
+			.display(ib);
+			.padding-rt(16vmin);
+			>p.oneBang-links{
+				.color(#898989);
+				.fontSize(3.5vmin);
+				>a{
+					.color(#898989);
+					.fontSize(3.5vmin);
+				}
+			}
+			>p.oneBang-copy{
+				.color(#a4a6a5);
+				.fontSize(3.5vmin);
+			}
+		}
+		.footer-main-pics{
+			.pos(abs);
+			.right(0);
+			.top(4vmin);
+			.width(12vmin);
+			.display(ib);
+			>img{
+				.width-max();
+			}
+		}
+	}
+}
+
+.return-top{
+	.pos(fix);
+	.z-index(2);
+	.border-radius(50%);
+	.bgColor(#666);
+	.bottom(0);
+	.right(6vmin);
+	.opa(0);
+	.width(12vmin);
+	.height(12vmin);
+	>img{
+		.width-max();
+	}
+}
+
+.return-top-show{
+	animation: returnTopShow .8s ease forwards;
+	-webkit-animation: returnTopShow .8s ease forwards;
+}
+
+@keyframes returnTopShow{
+	0%{
+		.opa(0);
+		.bottom(-46px);
+	}
+	100%{
+		.opa(8);
+		.bottom(32px);
+	}
+}
+
+@-webkit-keyframes returnTopShow{
+	0%{
+		.opa(0);
+		.bottom(-46px);
+	}
+	100%{
+		.opa(8);
+		.bottom(32px);
+	}
+}
+
+.return-top-hide{
+	animation: returnTopHide .8s ease forwards;
+	-webkit-animation: returnTopHide .8s ease forwards;
+}
+
+@keyframes returnTopHide{
+	0%{
+		.opa(8);
+		.bottom(32px);
+	}
+	100%{
+		.opa(0);
+		.bottom(-46px);
+	}
+}
+
+@-webkit-keyframes returnTopHide{
+	0%{
+		.opa(8);
+		.bottom(32px);
+	}
+	100%{
+		.opa(0);
+		.bottom(-46px);
+	}
+}
+
+@media only screen and (device-width:320px) and (device-height: 480px){
+	
+}
+
+@media only screen and (device-width:320px) and (device-height: 568px){
+	
+}
+
+@media screen and (min-width: 321px) and (max-width: 374px){
+	
+}
+
+@media screen and (min-width: 375px) and (max-width: 413px){
+	
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px){
+	
+}
+
+@media screen and (min-width: 768px){
+	
+}
