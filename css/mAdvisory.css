@@ -49,7 +49,7 @@
   opacity: 0;
   filter: alpha(opacity=0);
   color: #fdfbfc;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   margin-top: 0;
   line-height: 1.3em;
 }
@@ -102,7 +102,7 @@
   opacity: 0;
   filter: alpha(opacity=0);
   color: #fdfbfc;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   margin-top: 1.5vmax;
   line-height: 1.3em;
 }
@@ -141,7 +141,7 @@
   opacity: 0;
   filter: alpha(opacity=0);
   color: #747474;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   margin-top: 0;
 }
 .advisory .container .advisory-body .body-content .body-container .tencent-qq {

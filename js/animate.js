@@ -72,21 +72,27 @@
 				.addClass('fade-in-down-1');
 			
 		}else if(wTop > (sTop - bTop) && wTop < (nTop - bTop)){
+			// appService
+			// 	.addClass('fade-in')
+			// 	.find('.service-pics')
+			// 	.find('.pics-img-1')
+			// 	.addClass('top-series-1')
+			// 	.siblings('.pics-img-2')
+			// 	.addClass('top-series-2')
+			// 	.siblings('.pics-img-3')
+			// 	.addClass('top-series-3')
+			// 	.siblings('.pics-img-4')
+			// 	.addClass('top-series-4')
+			// 	.siblings('.pics-img-5')
+			// 	.addClass('top-series-5')
+			// 	.parent()
+			// 	.siblings('.service-content')
+			// 	.addClass('fade-in')
+			// 	.find('>h1,.service-item')
+			// 	.addClass('fade-in-down');
 			appService
 				.addClass('fade-in')
-				.find('.service-pics')
-				.find('.pics-img-1')
-				.addClass('top-series-1')
-				.siblings('.pics-img-2')
-				.addClass('top-series-2')
-				.siblings('.pics-img-3')
-				.addClass('top-series-3')
-				.siblings('.pics-img-4')
-				.addClass('top-series-4')
-				.siblings('.pics-img-5')
-				.addClass('top-series-5')
-				.parent()
-				.siblings('.service-content')
+				.find('.service-content')
 				.addClass('fade-in')
 				.find('>h1,.service-item')
 				.addClass('fade-in-down');

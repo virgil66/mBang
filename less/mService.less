@@ -57,7 +57,7 @@
 				.opa(0);
 				.width-max();
 				.color(@white);
-				.fontSize(4vmin);
+				.fontSize(3.5vmin);
 				// .margin-tp(6vmax);
 				line-height: 1.2em;
 			}
@@ -156,6 +156,33 @@
 	}
 	100%{
 		.margin-tp(2vmax);
+		.opa(10);
+	}
+}
+
+.fade-in-dowm-1{
+	animation: fadeInDowm_1 .8s cubic-bezier(.25,.46,.45,.94) forwards;
+	-webkit-animation: fadeInDowm_1 .8s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+@keyframes fadeInDowm_1{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(3vmax);
+		.opa(10);
+	}
+}
+
+@-webkit-keyframes fadeInDowm_1{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(3vmax);
 		.opa(10);
 	}
 }

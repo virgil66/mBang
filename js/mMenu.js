@@ -1,4 +1,15 @@
+
 ;(function($){
+	var random = parseInt(Math.random() * (9999 - 999) + 999);
+
+	myRefresh();
+
+	function myRefresh(){
+		var url = window.location.pathname;
+		// url = url + "#v=" + random;
+		// window.location.href = url;
+		// console.log(window.location.pathname)
+	}
 	/**
 	 * 菜单公共部分，共用在每一个页面中
 	 */
@@ -22,32 +33,32 @@
 					+"<div class='menu-main'>"
 						+"<ul class='menu-primary'>"
 							+"<li>"
-								+"<a href='index.html' class='menu-item'>"
+								+"<a href='index.html?v="+random+"' class='menu-item'>"
 									+"<img src='images/nav/nav_light_white_home.png' alt='首页' />"
 									+"<span>首页</span>"
 								+"</a>"
 							+"</li>"
 							+"<li>"
-								+"<a href='introduce.html' class='menu-item'>"
+								+"<a href='introduce.html?v="+random+"' class='menu-item'>"
 									+"<img src='images/nav/nav_light_white_introduce.png' alt='产品介绍' />"
 									+"<span>产品介绍</span>"
 								+"</a>"
 							+"</li>"
 							+"<li>"
-								+"<a href='/service' class='menu-item'>"
+								+"<a href='javascript:;' class='menu-item'>"
 									+"<img src='images/nav/nav_light_white_service.png' alt='产品服务' />"
 									+"<span>产品服务</span>"
 									+"<i class='next'><img src='images/nav/next_icon.png' alt='下一级' /></i>"
 								+"</a>"
 							+"</li>"
 							+"<li>"
-								+"<a href='app.html' class='menu-item'>"
+								+"<a href='app.html?v="+random+"' class='menu-item'>"
 									+"<img src='images/nav/nav_light_white_app.png' alt='APP' />"
 									+"<span>APP</span>"
 								+"</a>"
 							+"</li>"
 							+"<li>"
-								+"<a href='/help' class='menu-item'>"
+								+"<a href='javascript:;' class='menu-item'>"
 									+"<img src='images/nav/nav_light_white_help.png' alt='帮助中心' />"
 									+"<span>帮助中心</span>"
 									+"<i class='next'><img src='images/nav/next_icon.png' alt='下一级' /></i>"
@@ -63,23 +74,23 @@
 					+"</div>"
 					+"<div class='sub-menu'>"
 						+"<div class='product-service'>"
-							+"<a href='service.html' class='links'>"
+							+"<a href='service.html?v="+random+"' class='links'>"
 								+"<img src='images/nav/nav_light_white_service.png' alt='产品服务' />"
 								+"<span>产品服务</span>"
 							+"</a>"
 							+"<ul>"
-								+"<li class='menu-item'><a href='business.html'>商家开店</a></li>"
-								+"<li class='menu-item'><a href='opration.html'>运营推广</a></li>"
+								+"<li class='menu-item'><a href='business.html?v="+random+"'>商家开店</a></li>"
+								+"<li class='menu-item'><a href='opration.html?v="+random+"'>运营推广</a></li>"
 							+"</ul>"
 						+"</div>"
 						+"<div class='help-center'>"
-							+"<a href='help.html' class='links'>"
+							+"<a href='help.html?v="+random+"' class='links'>"
 								+"<img src='images/nav/nav_light_white_help.png' alt='帮助中心' />"
 								+"<span>帮助中心</span>"
 							+"</a>"
 							+"<ul>"
-								+"<li class='menu-item'><a href='advisory.html'>客服咨询</a></li>"
-								+"<li class='menu-item'><a href='helpCenter.html'>帮助中心</a></li>"
+								+"<li class='menu-item'><a href='advisory.html?v="+random+"'>客服咨询</a></li>"
+								+"<li class='menu-item'><a href='helpCenter.html?v="+random+"'>帮助中心</a></li>"
 							+"</ul>"
 						+"</div>"
 					+"</div>"

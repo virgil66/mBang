@@ -54,6 +54,8 @@
   left: 0;
   top: 48vmax;
   width: 100%;
+  height: 36vmax;
+  overflow: hidden;
   padding: 0 8vmin;
   box-sizing: border-box;
 }
@@ -66,6 +68,7 @@
   display: -ms-flex;
 }
 .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-top .oneBang-top-pics {
+  max-width: 30vmin;
   flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
@@ -155,12 +158,16 @@
 }
 .home .rotation > ul.rotation-small > li.on {
   background-color: #29a7e1;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #29a7e1;
 }
 .home .design {
   opacity: 0;
   filter: alpha(opacity=0);
   width: 100%;
   height: 93vmax;
+  margin-top: -1vmin;
 }
 .home .design > div {
   width: 100%;
@@ -215,6 +222,7 @@
   display: -moz-flex;
   display: -o-flex;
   display: -ms-flex;
+  text-align: center;
   -webkit-flex-flow: column;
   webkit-flex-flow: column;
   justify-content: center;
@@ -222,6 +230,8 @@
 }
 .home .design .design-video > video {
   width: 100%;
+  height: auto;
+  max-height: calc(46.5vmax);
 }
 .home .design .design-video .design-video-bg {
   position: absolute;
@@ -278,8 +288,6 @@
 }
 .home .appInroduce .series {
   height: 53vmax;
-  padding-left: 8vmin;
-  box-sizing: border-box;
 }
 .home .appInroduce .series .series-coat {
   width: 100%;
@@ -289,38 +297,41 @@
   position: relative;
   left: 0;
   top: 0;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -o-flex;
-  display: -ms-flex;
-  width: 240%;
+  *zoom: 1;
+  width: 400vw;
+}
+.home .appInroduce .series .series-coat .series-groups:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .home .appInroduce .series .series-coat .series-groups > li {
-  flex: 1;
-  -webkit-flex: 1;
-  -moz-flex: 1;
-  -o-flex: 1;
-  -ms-flex: 1;
+  width: 100vw;
+  float: left;
+  display: inline;
   height: 40vmax;
-  background-color: #dddddd;
-  margin-right: 4vmin;
+  padding: 0 8vmin 4vmin;
+  box-sizing: border-box;
 }
 .home .appInroduce .series .series-coat .series-groups > li > a.series-item {
   position: relative;
   display: block;
   width: 100%;
+  background-color: #dddddd;
   height: 100%;
   padding: 0 4vmin;
   box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
 }
 .home .appInroduce .series .series-coat .series-groups > li > a.series-item > img {
-  width: 100%;
+  width: 50vmin;
 }
 .home .appInroduce .series .series-coat .series-groups > li > a.series-item .series-content {
   height: 14vmax;
   overflow: hidden;
   margin-top: -2vmax;
+  text-align: left;
 }
 .home .appInroduce .series .series-coat .series-groups > li > a.series-item .series-content > h3 {
   color: #2d297d;
@@ -339,6 +350,8 @@
 }
 .home .appInroduce .series .series-direction {
   width: 100%;
+  padding-left: 8vmin;
+  box-sizing: border-box;
   margin-top: 3vmax;
   *zoom: 1;
 }
@@ -378,54 +391,17 @@
 }
 .home .appService > div {
   width: 100%;
-  height: 46.5vmax;
 }
 .home .appService .service-pics {
   position: relative;
   overflow: hidden;
+  padding: 0 6vmin;
+  box-sizing: border-box;
 }
-.home .appService .service-pics > img {
-  position: absolute;
-}
-.home .appService .service-pics > img.pics-img-1 {
-  width: 52vmin;
-  left: 17vmin;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  transform: rotate(-12deg);
-  -webkit-transform: rotate(-12deg);
-}
-.home .appService .service-pics > img.pics-img-2 {
-  width: 24vmin;
-  right: 12vmin;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  animation-delay: .3s;
-  -webkit-animation-delay: .3s;
-}
-.home .appService .service-pics > img.pics-img-3 {
-  width: 21vmin;
-  left: 14vmin;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  animation-delay: .6s;
-  -webkit-animation-delay: .6s;
-}
-.home .appService .service-pics > img.pics-img-4 {
-  width: 28vmin;
-  right: 10vmin;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  animation-delay: .9s;
-  -webkit-animation-delay: .9s;
-}
-.home .appService .service-pics > img.pics-img-5 {
-  width: 76vmin;
-  left: 9vmin;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  animation-delay: 1.2s;
-  -webkit-animation-delay: 1.2s;
+.home .appService .service-pics > img.service-pics-img {
+  width: 100%;
+  max-height: 42vmax;
+  margin-top: 7vmax;
 }
 .home .appService .service-content {
   opacity: 0;
@@ -438,8 +414,8 @@
   font-size: 8vmin;
   opacity: 0;
   filter: alpha(opacity=0);
-  animation-delay: 1.5s;
-  -webkit-animation-delay: 1.5s;
+  animation-delay: .8s;
+  -webkit-animation-delay: .8s;
 }
 .home .appService .service-content .service-item {
   opacity: 0;
@@ -447,8 +423,8 @@
   width: 100%;
   height: 25vmax;
   overflow: hidden;
-  animation-delay: 1.5s;
-  -webkit-animation-delay: 1.5s;
+  animation-delay: .8s;
+  -webkit-animation-delay: .8s;
 }
 .home .appService .service-content .service-item > p {
   color: #888888;

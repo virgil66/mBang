@@ -14,5 +14,5 @@ var bodyH;
 		.addClass('fade-in')
 		.parents('.help-head')
 		.siblings('.help-content')
-		.addClass('fade-in-dowm');
+		.addClass('fade-in-dowm-1');
 })(jQuery);

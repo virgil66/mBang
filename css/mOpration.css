@@ -98,7 +98,7 @@
   opacity: 0;
   filter: alpha(opacity=0);
   color: #fdfbfc;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   margin-top: 1.5vmax;
   line-height: 1.3em;
 }
@@ -212,7 +212,7 @@
   opacity: 0;
   filter: alpha(opacity=0);
   color: #9fa1a0;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
   line-height: 1.5em;
 }
 .scale-animate {

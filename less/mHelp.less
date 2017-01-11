@@ -158,6 +158,33 @@
 	}
 }
 
+.fade-in-dowm-1{
+	animation: fadeInDowm_1 .8s cubic-bezier(.25,.46,.45,.94) forwards;
+	-webkit-animation: fadeInDowm_1 .8s cubic-bezier(.25,.46,.45,.94) forwards;
+}
+
+@keyframes fadeInDowm_1{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(2vmax);
+		.opa(10);
+	}
+}
+
+@-webkit-keyframes fadeInDowm_1{
+	0%{
+		.margin-tp(0);
+		.opa(0);
+	}
+	100%{
+		.margin-tp(2vmax);
+		.opa(10);
+	}
+}
+
 .fade-down{
 	animation: fadeDowm .8s cubic-bezier(.25,.46,.45,.94) forwards;
 	-webkit-animation: fadeDowm .8s cubic-bezier(.25,.46,.45,.94) forwards;
