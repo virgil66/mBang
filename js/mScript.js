@@ -8,6 +8,16 @@ if(screenW > screenH){
 	availW = screenW;
 }
 ;(function($){
+
+	// $('html,body')
+	// 	.css({
+	// 		scrollTop: 0
+	// 	});
+		var wTop = $(window).scrollTop();
+		wTop = 0;
+		$(window).scrollTop(wTop)
+		console.log(wTop)
+		console.log($('html,body').offset().top)
 	/**
 	 * menu
 	 */
@@ -387,6 +397,118 @@ if(screenW > screenH){
 			.pause();
 
 	});
+
+	/**
+	 * app-form
+	 */
+	var $formBtn = app.find('.app-body .body-content .container-main .recruitment .recruitment-content-form .btn');
+	var formItem = app.find('.app-body .body-content .container-main .recruitment .recruitment-content-form .form-body-items');
+
+	$formBtn.on('click',function(e){
+		if(formVerifity()){
+			$.ajax({
+				url:"http://192.168.2.129:21000/api/jobs",
+				type:"post",
+				data:$("#recruitment-content-form").serialize(),
+				success:function(data){
+					if(data.status == "0"){
+						alert(data.message);
+					}else if(data.status == "1"){
+						alert(data.message);
+					}
+				},
+				error:function(data){
+					alert("信息提交失败，请重新确认信息无误！！");
+				}
+			});
+		}
+	});
+
+
+	function formVerifity(){
+		var companyName = formItem.find('input[name=companyName]');
+		var phone = formItem.find('input[name=phone]');
+		var jobName = formItem.find('input[name=jobName]');
+		var persons = formItem.find('input[name=persons]');
+		var description = formItem.find('textarea[name=description]');
+		var companyStr = "企业名称";
+		var phoneStr = "联系电话";
+		var jobStr = "招聘岗位";
+		var personStr = "招聘人数";
+		var descriptionStr = "职位描述";
+
+		if(isNotNull(companyName,companyStr) && isMobile(phone,phoneStr) && isNotNull(jobName,jobStr) && isInteger(persons,personStr) && isNotNull(description,descriptionStr)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+
+	/////////////
+   // 输入框内容为空 //
+   /////////////
+   function isNull(obj){
+   		if(trim(obj.val()).length == 0){
+   			return true;
+   		}else{
+   			return false;
+   		}
+   }
+
+   //////////////
+   // 表单内容不能为空 //
+   //////////////
+   function isNotNull(obj,str){
+   		if(isNull(obj)){
+   			alert(str+"不能为空！");
+   			obj.focus();
+   			return false;
+   		}else{
+   			return true;
+   		}
+   }
+
+   //////////////
+   // 手机号码的有效性 //
+   //////////////
+   function isMobile(obj,str){
+   		var pattern = /^1[34578]\d{9}$/;
+   		if(!isNotNull(obj,str)){
+   			return false;
+   		} 
+	    if(!(pattern.test(obj.val()))&&!isNull(obj)){     
+	        alert(str+" 不是正确！");  
+	        obj.focus();  
+	        return false;  
+	    }else{
+	    	return true;
+	    }
+   }
+
+   //////////////
+   //正整数有效性 //
+   //////////////
+   function isInteger(obj,str){
+   		var pattern = /^[1-9]\d*$/;
+   		if(!isNotNull(obj,str)){
+   			return false;
+   		} 
+	    if(!(pattern.test(obj.val()))&&!isNull(obj)){     
+	        alert(str+" 不是正确！");  
+	        obj.focus();  
+	        return false;  
+	    }else{
+	    	return true;
+	    }
+   }
+
+   ///////////////////////
+   // trim函数，去除字符串两侧的空格 //
+   ///////////////////////
+   function trim(obj){
+   		return $.trim(obj);
+   }
 
 	
 
