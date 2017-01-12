@@ -71,14 +71,14 @@ nav.menu {
   position: fixed;
   top: 0;
   z-index: 3;
-  left: -100vw;
-  width: 100%;
+  left: -68vw;
+  width: 68vw;
   height: 100vh;
   background-color: #313131;
 }
 nav.menu .menu-head {
   width: 100%;
-  height: 6vmax;
+  height: 8vmax;
   background-color: #272727;
   *zoom: 1;
 }
@@ -88,25 +88,28 @@ nav.menu .menu-head:after {
   clear: both;
 }
 nav.menu .menu-head > img {
-  height: 5vmax;
+  height: 7vmax;
   border: none;
   outline: none;
 }
 nav.menu .menu-head > img.menu-head-return {
   float: left;
   display: inline;
-  margin: 0.5vmax 0 0.5vmax -10vmin;
+  margin: 1vmin 0 0 -10vmin;
 }
 nav.menu .menu-head > img.menu-head-close {
   float: right;
   display: inline;
-  margin: 0.5vmax 1vmin 0.5vmax 0;
+  margin: 1vmin 1vmin 0 0;
 }
 nav.menu .menu-main {
   position: relative;
   left: 0;
-  width: 100%;
+  width: 68vw;
   height: 100%;
+}
+nav.menu .menu-main > ul.menu-primary {
+  width: 100%;
 }
 nav.menu .menu-main > ul.menu-primary > li {
   padding: 2.5vh 3vw 2.5vh 6vw;
@@ -143,7 +146,7 @@ nav.menu .sub-menu {
   position: relative;
   top: -100%;
   left: 200vw;
-  width: 100%;
+  width: 68vw;
   height: 100%;
   background-color: #313131;
 }
@@ -168,13 +171,13 @@ nav.menu .sub-menu .help-center > a.links > span {
 }
 nav.menu .sub-menu .product-service > a.links > img,
 nav.menu .sub-menu .help-center > a.links > img {
-  width: 4vmin;
-  margin-right: 4vmin;
+  width: 5vmin;
+  margin-right: 5vmin;
 }
 nav.menu .sub-menu .product-service > a.links > span,
 nav.menu .sub-menu .help-center > a.links > span {
   color: #ffffff;
-  font-size: 4vmin;
+  font-size: 5vmin;
 }
 nav.menu .sub-menu .product-service > ul,
 nav.menu .sub-menu .help-center > ul {
@@ -184,8 +187,8 @@ nav.menu .sub-menu .product-service > ul > li.menu-item > a,
 nav.menu .sub-menu .help-center > ul > li.menu-item > a {
   display: block;
   color: #04a0b0;
-  font-size: 3.5vmin;
-  padding: 1vmax 0 1vmax 28vmin;
+  font-size: 4vmin;
+  padding: 1vmax 0 1vmax 30vmin;
   box-sizing: border-box;
 }
 .li-animate-left {
@@ -282,7 +285,7 @@ nav.menu .sub-menu .help-center > ul > li.menu-item > a {
 }
 @keyframes menuAnimate {
   0% {
-    left: -100vw;
+    left: -68vw;
   }
   100% {
     left: 0;
@@ -290,7 +293,7 @@ nav.menu .sub-menu .help-center > ul > li.menu-item > a {
 }
 @-webkit-keyframes menuAnimate {
   0% {
-    left: -100vw;
+    left: -68vw;
   }
   100% {
     left: 0;
@@ -361,7 +364,7 @@ nav.menu .sub-menu .help-center > ul > li.menu-item > a {
     left: 0;
   }
   100% {
-    left: -100vw;
+    left: -68vw;
   }
 }
 @-webkit-keyframes menuAnimateMain {
@@ -369,7 +372,7 @@ nav.menu .sub-menu .help-center > ul > li.menu-item > a {
     left: 0;
   }
   100% {
-    left: -100vw;
+    left: -68vw;
   }
 }
 .fade-in {
@@ -434,13 +437,13 @@ nav.menu .sub-menu .help-center > ul > li.menu-item > a {
 }
 @keyframes fadeInLeftSub {
   0% {
-    padding-left: 28vmin;
+    padding-left: 30vmin;
     box-sizing: border-box;
     opacity: 0;
     filter: alpha(opacity=0);
   }
   100% {
-    padding-left: 14vmin;
+    padding-left: 16vmin;
     box-sizing: border-box;
     opacity: 1;
     filter: alpha(opacity=10);
@@ -448,13 +451,13 @@ nav.menu .sub-menu .help-center > ul > li.menu-item > a {
 }
 @-webkit-keyframes fadeInLeftSub {
   0% {
-    padding-left: 28vmin;
+    padding-left: 30vmin;
     box-sizing: border-box;
     opacity: 0;
     filter: alpha(opacity=0);
   }
   100% {
-    padding-left: 14vmin;
+    padding-left: 16vmin;
     box-sizing: border-box;
     opacity: 1;
     filter: alpha(opacity=10);

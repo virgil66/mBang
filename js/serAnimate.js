@@ -2,6 +2,12 @@ var screenW = screen.width;
 var screenH = screen.height;
 var bodyH;
 ;(function(e){
+	window.addEventListener("load",function() {
+		  setTimeout(function(){
+		    window.scrollTo(0, 0);
+		  }, 0);
+		});
+	
 	var service = $('.service');
 	var serType = service.find('.service-type');
 	serType

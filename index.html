@@ -11,11 +11,11 @@
 	<link rel="stylesheet" href="css/mFoot.css">
 </head>
 <body>
-	<div class="home" id="home">
+	<div class="home body-common" id="home">
 		<div class="rotation" id="rotation">
 			<ul class="rotation-groups">
 				<li>
-					<a href="javascript:;" class="rotation-list">
+					<a href="introduce.html" class="rotation-list">
 						<img src="images/bg_001.png" alt="壹帮帮" />
 						<div class="oneBang">
 							<div class="oneBang-top">
@@ -47,7 +47,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="javascript:;" class="rotation-list">
+					<a href="service.html" class="rotation-list">
 						<img src="images/bg_002.png" alt="壹杯加科技" />
 					</a>
 				</li>
@@ -82,11 +82,11 @@
 				<a href="app.html" class="more">了解更多</a>
 			</div>
 			<div class="series">
-				<div class="series-coat">
+				<div class="series-coat" id="series-coat">
 					<ul class="series-groups">
 						<li>
 							<a href="app.html#introduce" class="series-item">
-								<img src="images/index_app_introduce_01.png" alt="APP介绍" />
+								<img src="images/index_app_icon-13.png" alt="APP介绍" />
 								<div class="series-content">
 									<h3>APP介绍</h3>
 									<p>专门提供商家开店、门店运营管理的专业支持服务平台。帮助解决开店及店铺运营中产生的困难和问题</p>
@@ -183,7 +183,7 @@
 	<!-- <script src="js/rotation.js"></script> -->
 	<script src="js/animate.js"></script>
 	<script src="js/footer.js"></script>
-	<script src="js/random.js"></script>
+	<!-- <script src="js/random.js"></script> -->
 	<script>
 		// (function(){
 		// 	var scrollImg = $.mggScrollImg('.rotation .rotation-groups',{
@@ -245,7 +245,78 @@
 					left: _l
 				});
 			},false);
+
 		});
+
+		$(function(){
+			////////////////////
+			// 移动端手指滑动实现图片的轮播、首页 //
+			////////////////////
+			var m_iNow = 0, m_index = 1, m_startX = 0;
+			var series = document.getElementById('series-coat');
+			var seriesBig = $('.series-coat').find('.series-groups');
+
+			// 监听touchstart事件
+			series.addEventListener('touchstart',function(e){
+				// e.preventDefault();
+				m_startX = e.targetTouches[0].pageX;
+			},false);
+
+			// 监听touchend事件
+			series.addEventListener('touchend',function(e){
+				// e.preventDefault();
+				var m_width = $('.series-coat').width();   //获取可视化区域的宽度
+				var b_left = (m_width / 2) * 5;
+				var _l = m_width + $('.series-groups').position().left%m_width,
+					_w = m_width / 2,
+					_m = $('.series-groups >li').length - 1;
+				var m_left = $('.series-groups').position().left;   //重新获取left的值
+				// 中点判断
+				if(_l <= _w){
+					m_left = m_left - _l;
+				}else{
+					m_left = m_left + (m_width - _l);
+				}
+				if(m_left >= 0){
+					m_left = 0;
+				}else if(m_left < -m_width * _m){
+					m_left = -m_width * _m;
+				}
+				
+				$('.series-groups').animate({
+					left: m_left
+				},200);
+				var _now = parseInt(-m_left/m_width);
+				$('.series-coat').siblings('.series-direction').find('>ul >li').eq(_now).addClass('on').siblings('li').removeClass('on');
+				if(m_left <= -b_left){
+					$('.series-coat')
+						.siblings('.series-direction')
+						.find('>img')
+						.attr({
+							src: "images/index_app_btn_left.png"
+						});
+				}
+				if(m_left >= 0){
+					$('.series-coat')
+						.siblings('.series-direction')
+						.find('>img')
+						.attr({
+							src: "images/index_app_btn_right.png"
+						});
+					}
+				
+			},false);
+
+			series.addEventListener('touchmove',function(e){
+				// e.preventDefault();
+				var touch = e.targetTouches[0];
+				var _l = $('.series-groups').position().left + touch.pageX - m_startX;
+				m_startX = touch.pageX;
+				$('.series-groups').css({
+					left: _l
+				});
+			},false);
+		})
 	</script>
 </body>
 </html>

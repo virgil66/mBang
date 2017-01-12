@@ -151,6 +151,7 @@
 .center .container .center-body .body-content .body-container .container-paragraph > span.container-num {
   opacity: 0;
   filter: alpha(opacity=0);
+  width: 5vmin;
   display: inline-block;
   font-size: 5vmin;
   color: #585657;

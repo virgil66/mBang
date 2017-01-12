@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/mFoot.css">
 </head>
 <body>
-	<div class="app" id="app">
+	<div class="app body-common" id="app">
 		<div class="container">
 			<div class="app-head">
 				<div class="head-content">
@@ -348,11 +348,11 @@
 											</div>
 											<div class="object">
 												<div class="paragraph">
-													<span>联系电话：</span>
-													<p>021-61520545</p>
+													<span class="tel-email">联系电话：</span>
+													<p>021-61520545</p>(点击拨打电话)
 												</div>
 												<div class="paragraph">
-													<span>HR邮箱：</span>
+													<span class="tel-email">HR邮箱：</span>
 													<p>hr@1bpcafe.cn</p>
 												</div>
 											</div>
@@ -372,7 +372,10 @@
 	<script src="js/appAnimate.js"></script>
 	<script src="js/footer.js"></script>
 	<script>
+
+
 		$(function(){
+
 			var i;
 			var app = $('.app');
 			var $liBtn = app.find('.container .app-body .body-content .container-head-groups >li');
@@ -382,7 +385,7 @@
 			var bW = $('.container-head').siblings('.container-main').width();
 
 			var hashName = window.location.hash;
-			console.log(hashName)
+			console.log(window.location.hash);
 			switch(hashName){
 				case "#introduce":{
 					i = 0;
@@ -410,7 +413,13 @@
 			}
 
 			function movePosistion(index){
+				var bodyContentT = $('.app .container .app-body .body-content').offset().top;
+				$('html,body').animate({
+					scrollTop: bodyContentT
+				},200);
+				
 				$('.app .container-head-groups >li')
+					.eq(index)
 					.addClass('active')
 					.siblings('li')
 					.removeClass('active')

@@ -3,12 +3,12 @@ var screenH = screen.height;
 	/**
 	 * footer
 	 */
-	var footer = $("<footer class='footer'>"
+	var footer = $("<footer class='footer body-common'>"
 					+"<div class='footer-head'>"
 						+"<div class='footerlinks'>"
-							+"<a href='javascript:;' class='about-us'>关于我们</a>"
-							+"<a href='javascript:;' class='company-address'>公司地址</a>"
-							+"<a href='javascript:;' class='recurit-talent'>招贤纳士</a>"
+							+"<a href='introduce.html#tech' class='about-us'>关于我们</a>"
+							// +"<a href='javascript:;' class='company-address'>公司地址</a>"
+							+"<a href='app.html#recruitment' class='recurit-talent'>招贤纳士</a>"
 						+"</div>"
 						+"<div class='footer-icon'>"
 							+"<a href='javascript:;'><img src='images/index_footer_wechat.png' alt='wechat' class='footer-wechat' /></a>"
@@ -19,6 +19,7 @@ var screenH = screen.height;
 					+"<div class='footer-main'>"
 						+"<div class='footer-main-content'>"
 							+"<p class='oneBang-links'>友情链接：<a href='javascript:;'>壹杯加科技（上海）有限公司</a></p>"
+							+"<p class='oneBang-links'>公司地址：<a href='javascript:;'>上海市长宁区延安西路1612号</a></p>"
 							+"<p class='oneBang-copy'>&copy;2016 Qualcomm Technologies, Inc, and/or its affiliated companies.</p>"
 						+"</div>"
 						+"<div class='footer-main-pics'>"

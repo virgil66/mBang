@@ -35,16 +35,9 @@ footer.footer .footer-head .footerlinks > a {
 footer.footer .footer-head .footerlinks > a.about-us {
   padding-right: 3vmin;
   box-sizing: border-box;
-}
-footer.footer .footer-head .footerlinks > a.company-address {
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-left-color: #a7a7a7;
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #a7a7a7;
-  padding: 0 3vmin;
-  box-sizing: border-box;
 }
 footer.footer .footer-head .footerlinks > a.recurit-talent {
   padding-left: 3vmin;

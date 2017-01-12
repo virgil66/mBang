@@ -9,6 +9,12 @@ if(screenW > screenH){
 }
 
 ;(function($){
+	window.addEventListener("load",function() {
+		  setTimeout(function(){
+		    window.scrollTo(0, 0);
+		  }, 0);
+		});
+	
 	var center = $('.center');
 	var bodyH = $('body').height();
 

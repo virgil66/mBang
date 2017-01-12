@@ -1,12 +1,9 @@
 ;(function($){
-	var innerW = $(window).innerWidth();
-	var innerH = $(window).innerHeight();
-	var mHeight;
-	if(innerH > innerW){
-		mHeight = innerH - 50;
-	}else{
-		mHeight = innerW - 50;
-	}
+	window.addEventListener("load",function() {
+		  setTimeout(function(){
+		    window.scrollTo(0, 0);
+		  }, 0);
+		});
 
 	
 	/**
@@ -110,9 +107,6 @@
 				.siblings('.news-groups')
 				.addClass('fade-in-down');
 		}
-		// console.log($(window).scrollTop());
-		// console.log($('.design').offset().top);
-		// console.log(design.offset().top);
 	});
 	
 })(jQuery);

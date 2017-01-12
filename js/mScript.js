@@ -9,15 +9,6 @@ if(screenW > screenH){
 }
 ;(function($){
 
-	// $('html,body')
-	// 	.css({
-	// 		scrollTop: 0
-	// 	});
-		var wTop = $(window).scrollTop();
-		wTop = 0;
-		$(window).scrollTop(wTop)
-		console.log(wTop)
-		console.log($('html,body').offset().top)
 	/**
 	 * menu
 	 */
@@ -58,6 +49,30 @@ if(screenW > screenH){
 			.parents('.menu')
 			.removeClass('menu-animate');
 	});
+
+	$('.body-common').on('click',function(e){
+		$(this)
+			.siblings('.menu')
+			.find('.menu-head-return')
+			.removeClass('return-animate return-intial')
+			.parent()
+			.siblings('.menu-main')
+			.removeClass('menu-animate-main')
+			.find('.menu-primary >li')
+			.removeClass('li-animate-left li-animate-right')
+			.find('.menu-item >i')
+			.removeClass('fade-in-left-next fade-in-right-next')
+			.parents('.menu-main')
+			.siblings('.sub-menu')
+			.removeClass('menu-animate-sub')
+			.find('>div >a.links')
+			.removeClass('fade-in-left')
+			.siblings('ul')
+			.find('>li >a')
+			.removeClass('fade-in-left-sub')
+			.parents('.menu')
+			.removeClass('menu-animate');
+	})
 
 	$return.on('click',function(e){
 		e.preventDefault();
@@ -153,19 +168,11 @@ if(screenW > screenH){
 				.play();
 	});
 
-	// $video.on('click',function(e){
-	// 	e.preventDefault();
-	// 	$video[0].pause();
-	// 	$videoBg.show();
-	// });
+	
 
 	//appIntroduce
 	var $dir = $home.find('.appInroduce .series .series-direction >img');
 	var $itemLi = $home.find('.appInroduce .series .series-groups >li >a');
-
-	// $itemLi.on('click',function(e){
-	// 	window.location.href
-	// })
 
 
 	var app_flag = 0;
@@ -207,6 +214,7 @@ if(screenW > screenH){
 
 		
 	});
+
 
 	/**
 	 * introduce

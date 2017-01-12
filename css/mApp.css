@@ -568,6 +568,10 @@
   font-size: 3vmin;
   color: #252324;
 }
+.app .container .app-body .body-content .body-container .container-main > ul.container-main-groups .recruitment .recruitment-content .recruitment-content-body .object .paragraph > span:not(.tel-email) {
+  display: inline-block;
+  width: 5vmin;
+}
 .scale-animate {
   animation: scaleAnimate 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   -webkit-animation: scaleAnimate 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
