@@ -16,7 +16,7 @@
 			<ul class="rotation-groups">
 				<li>
 					<a href="introduce.html" class="rotation-list">
-						<img src="images/bg_001.png" alt="壹帮帮" />
+						<img src="images/index_banner_small-20.png" alt="壹帮帮" />
 						<div class="oneBang">
 							<div class="oneBang-top">
 								<div class="oneBang-top-pics">
@@ -48,7 +48,26 @@
 				</li>
 				<li>
 					<a href="service.html" class="rotation-list">
-						<img src="images/bg_002.png" alt="壹杯加科技" />
+						<img src="images/index_banner_bg-15.png" alt="壹杯加科技" />
+						<div class="technology">
+							<div class="technology-pics">
+								<img src="images/index_logo_01.png" alt="壹杯加科技" />
+							</div>
+							<div class="technology-content">
+								<h1 class="head-level-1">壹帮帮</h1>
+								<h1 class="head-level-1 title-margin">6大功能</h1>
+								<p class="technology-content-paragraph p-margin">
+									<span>视频教学</span>
+									<span class="middle-border">开店手续</span>
+									<span>设计装修</span>
+								</p>
+								<p class="technology-content-paragraph">
+									<span>物料采购</span>
+									<span class="middle-border">招聘培训</span>
+									<span>店铺推广</span>
+								</p>
+							</div>
+						</div>
 					</a>
 				</li>
 			</ul>
@@ -69,7 +88,7 @@
 				</div>
 			</div>
 			<div class="design-video">
-				<video controls="controls" src="video/摩卡咖啡教程.mp4"></video>
+				<video controls="controls" src="video/拿铁咖啡制作教程.mp4"></video>
 				<div class="design-video-bg">
 					<img src="images/index_vedio_bg.png" alt="咖啡教学" />
 				</div>
@@ -86,7 +105,7 @@
 					<ul class="series-groups">
 						<li>
 							<a href="app.html#introduce" class="series-item">
-								<img src="images/index_app_icon-13.png" alt="APP介绍" />
+								<img src="images/index_app_icon3-13-16.png" alt="APP介绍" />
 								<div class="series-content">
 									<h3>APP介绍</h3>
 									<p>专门提供商家开店、门店运营管理的专业支持服务平台。帮助解决开店及店铺运营中产生的困难和问题</p>
@@ -95,7 +114,7 @@
 						</li>
 						<li>
 							<a href="app.html#code" class="series-item">
-								<img src="images/index_app_wechat_01.png" alt="APP二维码" />
+								<img src="images/index_app_icon3-13-17.png" alt="APP二维码" />
 								<div class="series-content">
 									<h3>APP二维码</h3>
 									<p>我们为您提供了Andriod和iOS两个版本方便下载。其他版本，程序员正在努力搭建中</p>
@@ -104,7 +123,7 @@
 						</li>
 						<li>
 							<a href="app.html#video" class="series-item">
-								<img src="images/index_app_vedio_01.png" alt="APP视频教学" />
+								<img src="images/index_app_icon3-13-18.png" alt="APP视频教学" />
 								<div class="series-content">
 									<h3>视频教学</h3>
 									<p>关于如何制作咖啡，文字永远不如视频讲的清。不妨点开看看！</p>
@@ -113,7 +132,7 @@
 						</li>
 						<li>
 							<a href="app.html#recruiment" class="series-item">
-								<img src="images/index_app_recruit_01.png" alt="APP招聘" />
+								<img src="images/index_app_icon3-13-19.png" alt="APP招聘" />
 								<div class="series-content">
 									<h3>人才招聘</h3>
 									<p>我们为商家提供人才招聘服务，也为求职者提供人才招聘信息。</p>
@@ -177,146 +196,145 @@
 		</div>
 	</div>
 	<script src="js/jquery-3.1.1.js"></script>
-	<!-- <script src="js/fontSize.js"></script> -->
 	<script src="js/mMenu.js"></script>
 	<script src="js/mScript.js"></script>
-	<!-- <script src="js/rotation.js"></script> -->
+	<script src="js/rotation.js"></script>
 	<script src="js/animate.js"></script>
 	<script src="js/footer.js"></script>
 	<!-- <script src="js/random.js"></script> -->
 	<script>
-		// (function(){
-		// 	var scrollImg = $.mggScrollImg('.rotation .rotation-groups',{
-		// 	        loop : true,//循环切换
-		// 	        auto : false,//自动切换
-		// 	        callback : function(ind){//这里传过来的是索引值
-		// 	            $('.rotation-small li').eq(ind).addClass('on').siblings('li').removeClass('on');
-		// 	        }
-		// 	    });
-		// })();
-		$(document).ready(function(){
-			////////////////////
-			// 移动端手指滑动实现图片的轮播、首页 //
-			////////////////////
-			var m_iNow = 0, m_index = 1, m_startX = 0;
-			var rotation = document.getElementById('rotation');
-			var rotationBig = $('#rotation').find('.rotation-groups');
+		(function(){
+			var scrollImg = $.mggScrollImg('.rotation .rotation-groups',{
+			        loop : true,//循环切换
+			        auto : false,//自动切换
+			        callback : function(ind){//这里传过来的是索引值
+			            $('.rotation-small li').eq(ind).addClass('on').siblings('li').removeClass('on');
+			        }
+			    });
+		})();
+		// $(document).ready(function(){
+		// 	////////////////////
+		// 	// 移动端手指滑动实现图片的轮播、首页 //
+		// 	////////////////////
+		// 	var m_iNow = 0, m_index = 1, m_startX = 0;
+		// 	var rotation = document.getElementById('rotation');
+		// 	var rotationBig = $('#rotation').find('.rotation-groups');
 
-			// 监听touchstart事件
-			rotation.addEventListener('touchstart',function(e){
-				// e.preventDefault();
-				m_startX = e.targetTouches[0].pageX;
-			},false);
+		// 	// 监听touchstart事件
+		// 	rotation.addEventListener('touchstart',function(e){
+		// 		// e.preventDefault();
+		// 		m_startX = e.targetTouches[0].pageX;
+		// 	},false);
 
-			// 监听touchend事件
-			rotation.addEventListener('touchend',function(e){
-				// e.preventDefault();
-				var m_width = $('.rotation').width();   //获取可视化区域的宽度
-				var _l = m_width + $('.rotation-groups').position().left%m_width,
-					_w = m_width / 2,
-					_m = $('.rotation-groups >li').length - 1;
-				var m_left = $('.rotation-groups').position().left;   //重新获取left的值
-				// 中点判断
-				if(_l <= _w){
-					m_left = m_left - _l;
-				}else{
-					m_left = m_left + (m_width - _l);
-				}
-				if(m_left >= 0){
-					m_left = 0;
-				}else if(m_left < -m_width * _m){
-					m_left = -m_width * _m;
-				}
+		// 	// 监听touchend事件
+		// 	rotation.addEventListener('touchend',function(e){
+		// 		// e.preventDefault();
+		// 		var m_width = $('.rotation').width();   //获取可视化区域的宽度
+		// 		var _l = m_width + $('.rotation-groups').position().left%m_width,
+		// 			_w = m_width / 2,
+		// 			_m = $('.rotation-groups >li').length - 1;
+		// 		var m_left = $('.rotation-groups').position().left;   //重新获取left的值
+		// 		// 中点判断
+		// 		if(_l <= _w){
+		// 			m_left = m_left - _l;
+		// 		}else{
+		// 			m_left = m_left + (m_width - _l);
+		// 		}
+		// 		if(m_left >= 0){
+		// 			m_left = 0;
+		// 		}else if(m_left < -m_width * _m){
+		// 			m_left = -m_width * _m;
+		// 		}
 				
-				$('.rotation-groups').animate({
-					left: m_left
-				},200);
-				var _now = parseInt(-m_left/m_width);
-				$('.rotation').find('.rotation-small >li').eq(_now).addClass('on').siblings('li').removeClass('on');
+		// 		$('.rotation-groups').animate({
+		// 			left: m_left
+		// 		},200);
+		// 		var _now = parseInt(-m_left/m_width);
+		// 		$('.rotation').find('.rotation-small >li').eq(_now).addClass('on').siblings('li').removeClass('on');
 				
-			},false);
+		// 	},false);
 
-			rotation.addEventListener('touchmove',function(e){
-				// e.preventDefault();
-				var touch = e.targetTouches[0];
-				var _l = $('.rotation-groups').position().left + touch.pageX - m_startX;
-				m_startX = touch.pageX;
-				$('.rotation-groups').css({
-					left: _l
-				});
-			},false);
+		// 	rotation.addEventListener('touchmove',function(e){
+		// 		// e.preventDefault();
+		// 		var touch = e.targetTouches[0];
+		// 		var _l = $('.rotation-groups').position().left + touch.pageX - m_startX;
+		// 		m_startX = touch.pageX;
+		// 		$('.rotation-groups').css({
+		// 			left: _l
+		// 		});
+		// 	},false);
 
-		});
+		// });
 
-		$(function(){
-			////////////////////
-			// 移动端手指滑动实现图片的轮播、首页 //
-			////////////////////
-			var m_iNow = 0, m_index = 1, m_startX = 0;
-			var series = document.getElementById('series-coat');
-			var seriesBig = $('.series-coat').find('.series-groups');
+		// $(function(){
+		// 	////////////////////
+		// 	// 移动端手指滑动实现图片的轮播、首页 //
+		// 	////////////////////
+		// 	var m_iNow = 0, m_index = 1, m_startX = 0;
+		// 	var series = document.getElementById('series-coat');
+		// 	var seriesBig = $('.series-coat').find('.series-groups');
 
-			// 监听touchstart事件
-			series.addEventListener('touchstart',function(e){
-				// e.preventDefault();
-				m_startX = e.targetTouches[0].pageX;
-			},false);
+		// 	// 监听touchstart事件
+		// 	series.addEventListener('touchstart',function(e){
+		// 		// e.preventDefault();
+		// 		m_startX = e.targetTouches[0].pageX;
+		// 	},false);
 
-			// 监听touchend事件
-			series.addEventListener('touchend',function(e){
-				// e.preventDefault();
-				var m_width = $('.series-coat').width();   //获取可视化区域的宽度
-				var b_left = (m_width / 2) * 5;
-				var _l = m_width + $('.series-groups').position().left%m_width,
-					_w = m_width / 2,
-					_m = $('.series-groups >li').length - 1;
-				var m_left = $('.series-groups').position().left;   //重新获取left的值
-				// 中点判断
-				if(_l <= _w){
-					m_left = m_left - _l;
-				}else{
-					m_left = m_left + (m_width - _l);
-				}
-				if(m_left >= 0){
-					m_left = 0;
-				}else if(m_left < -m_width * _m){
-					m_left = -m_width * _m;
-				}
+		// 	// 监听touchend事件
+		// 	series.addEventListener('touchend',function(e){
+		// 		// e.preventDefault();
+		// 		var m_width = $('.series-coat').width();   //获取可视化区域的宽度
+		// 		var b_left = (m_width / 2) * 5;
+		// 		var _l = m_width + $('.series-groups').position().left%m_width,
+		// 			_w = m_width / 2,
+		// 			_m = $('.series-groups >li').length - 1;
+		// 		var m_left = $('.series-groups').position().left;   //重新获取left的值
+		// 		// 中点判断
+		// 		if(_l <= _w){
+		// 			m_left = m_left - _l;
+		// 		}else{
+		// 			m_left = m_left + (m_width - _l);
+		// 		}
+		// 		if(m_left >= 0){
+		// 			m_left = 0;
+		// 		}else if(m_left < -m_width * _m){
+		// 			m_left = -m_width * _m;
+		// 		}
 				
-				$('.series-groups').animate({
-					left: m_left
-				},200);
-				var _now = parseInt(-m_left/m_width);
-				$('.series-coat').siblings('.series-direction').find('>ul >li').eq(_now).addClass('on').siblings('li').removeClass('on');
-				if(m_left <= -b_left){
-					$('.series-coat')
-						.siblings('.series-direction')
-						.find('>img')
-						.attr({
-							src: "images/index_app_btn_left.png"
-						});
-				}
-				if(m_left >= 0){
-					$('.series-coat')
-						.siblings('.series-direction')
-						.find('>img')
-						.attr({
-							src: "images/index_app_btn_right.png"
-						});
-					}
+		// 		$('.series-groups').animate({
+		// 			left: m_left
+		// 		},200);
+		// 		var _now = parseInt(-m_left/m_width);
+		// 		$('.series-coat').siblings('.series-direction').find('>ul >li').eq(_now).addClass('on').siblings('li').removeClass('on');
+		// 		if(m_left <= -b_left){
+		// 			$('.series-coat')
+		// 				.siblings('.series-direction')
+		// 				.find('>img')
+		// 				.attr({
+		// 					src: "images/index_app_btn_left.png"
+		// 				});
+		// 		}
+		// 		if(m_left >= 0){
+		// 			$('.series-coat')
+		// 				.siblings('.series-direction')
+		// 				.find('>img')
+		// 				.attr({
+		// 					src: "images/index_app_btn_right.png"
+		// 				});
+		// 			}
 				
-			},false);
+		// 	},false);
 
-			series.addEventListener('touchmove',function(e){
-				// e.preventDefault();
-				var touch = e.targetTouches[0];
-				var _l = $('.series-groups').position().left + touch.pageX - m_startX;
-				m_startX = touch.pageX;
-				$('.series-groups').css({
-					left: _l
-				});
-			},false);
-		})
+		// 	series.addEventListener('touchmove',function(e){
+		// 		// e.preventDefault();
+		// 		var touch = e.targetTouches[0];
+		// 		var _l = $('.series-groups').position().left + touch.pageX - m_startX;
+		// 		m_startX = touch.pageX;
+		// 		$('.series-groups').css({
+		// 			left: _l
+		// 		});
+		// 	},false);
+		// })
 	</script>
 </body>
 </html>

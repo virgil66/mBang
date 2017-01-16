@@ -46,6 +46,28 @@ if(screenW > screenH){
 		// console.log(tTop)
 
 		if(wTop > (pTop - bodyH) && wTop < (sTop - bodyH)){
+			productAnimate();
+		}else if(wTop >= (sTop - bodyH) && wTop < (eTop - bodyH)){
+			productAnimate();
+			storeAnimate();
+		}else if(wTop >= (eTop - bodyH) && wTop < (nTop - bodyH)){
+			productAnimate();
+			storeAnimate();
+			equipmentsAnimate();
+		}else if(wTop >= (nTop - bodyH) && wTop < (tTop - bodyH)){
+			productAnimate();
+			storeAnimate();
+			equipmentsAnimate();
+			openAnimate();
+		}else{
+			productAnimate();
+			storeAnimate();
+			equipmentsAnimate();
+			openAnimate();
+			tailAnimate();
+		}
+
+		function productAnimate(){
 			business
 				.find('.container .business-body .body-content')
 				.find('.product-design .module-icon >img')
@@ -57,7 +79,9 @@ if(screenW > screenH){
 				.addClass('fade-in')
 				.siblings('p')
 				.addClass('fade-in-down-3');
-		}else if(wTop >= (sTop - bodyH) && wTop < (eTop - bodyH)){
+		}
+
+		function storeAnimate(){
 			business
 				.find('.container .business-body .body-content')
 				.find('.store-design .module-icon >img')
@@ -69,7 +93,9 @@ if(screenW > screenH){
 				.addClass('fade-in')
 				.siblings('p')
 				.addClass('fade-in-down-3');
-		}else if(wTop >= (eTop - bodyH) && wTop < (nTop - bodyH)){
+		}
+
+		function equipmentsAnimate(){
 			business
 				.find('.container .business-body .body-content')
 				.find('.equipments-materials .module-icon >img')
@@ -81,7 +107,9 @@ if(screenW > screenH){
 				.addClass('fade-in')
 				.siblings('p')
 				.addClass('fade-in-down-3');
-		}else if(wTop >= (nTop - bodyH) && wTop < (tTop - bodyH)){
+		}
+
+		function openAnimate(){
 			business
 				.find('.container .business-body .body-content')
 				.find('.open-store .module-icon >img')
@@ -93,7 +121,9 @@ if(screenW > screenH){
 				.addClass('fade-in')
 				.siblings('p')
 				.addClass('fade-in-down-3');
-		}else{
+		}
+
+		function tailAnimate(){
 			business
 				.find('.container .business-body .body-tail .tail-content')
 				.addClass('fade-in-down-2')
@@ -102,8 +132,6 @@ if(screenW > screenH){
 				.siblings('p')
 				.addClass('fade-in-down-3');
 		}
-
-		// console.log(wTop)
 		
 
 	})

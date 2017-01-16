@@ -45,6 +45,22 @@ if(screenW > screenH){
 		// console.log(tTop)
 
 		if(wTop > (iTop - bodyH) && wTop < (aTop - bodyH)){
+			imageAnimate();
+		}else if(wTop >= (aTop - bodyH) && wTop < (inTop - bodyH)){
+			imageAnimate();
+			abrandAnimate();
+		}else if(wTop >= (inTop - bodyH) && wTop < (tTop - bodyH)){
+			imageAnimate();
+			abrandAnimate();
+			internetAnimate();
+		}else{
+			imageAnimate();
+			abrandAnimate();
+			internetAnimate();
+			tailAnimate();
+		}
+
+		function imageAnimate(){
 			opration
 				.find('.container .opration-body .body-content')
 				.find('.image-design .module-icon >img')
@@ -56,7 +72,9 @@ if(screenW > screenH){
 				.addClass('fade-in')
 				.siblings('p')
 				.addClass('fade-in-down-3');
-		}else if(wTop >= (aTop - bodyH) && wTop < (inTop - bodyH)){
+		}
+
+		function abrandAnimate(){
 			opration
 				.find('.container .opration-body .body-content')
 				.find('.abrand-manager .module-icon >img')
@@ -68,7 +86,9 @@ if(screenW > screenH){
 				.addClass('fade-in')
 				.siblings('p')
 				.addClass('fade-in-down-3');
-		}else if(wTop >= (inTop - bodyH) && wTop < (tTop - bodyH)){
+		}
+
+		function internetAnimate(){
 			opration
 				.find('.container .opration-body .body-content')
 				.find('.internet-promotion .module-icon >img')
@@ -80,7 +100,9 @@ if(screenW > screenH){
 				.addClass('fade-in')
 				.siblings('p')
 				.addClass('fade-in-down-3');
-		}else{
+		}
+
+		function tailAnimate(){
 			opration
 				.find('.container .opration-body .body-tail .tail-content')
 				.addClass('fade-in-down-2')
@@ -89,8 +111,6 @@ if(screenW > screenH){
 				.siblings('p')
 				.addClass('fade-in-down-3');
 		}
-
-		// console.log(wTop)
 		
 
 	})

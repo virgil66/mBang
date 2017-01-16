@@ -97,6 +97,51 @@
 							}
 						}
 					}
+					.technology{
+						.pos(abs);
+						.top(0);
+						.left(0);
+						.width-max();
+						.padding-tp(19vmax);
+						.technology-pics{
+							.width-max();
+							.text-al(center);
+							>img{
+								.width(30vmin);
+							}
+						}
+						.technology-content{
+							.width-max();
+							.margin-tp(9vmin);
+							>h1,
+							>p{
+								.text-al(center);
+							}
+							>h1{
+								.color(#2d297d);
+								.fontSize(8vmin);
+							}
+							>h1.title-margin{
+								.margin-tp(-1vmin);
+							}
+							>p{
+								.color(#29a7e1);
+								.fontSize(3.5vmin);
+								>span:not(.middle-border){
+									.padding(0 1.5vmin);
+								}
+								>span.middle-border{
+									.border-lt(1px,solid,#28A7E1);
+									.border-rt(1px,solid,#28A7E1);
+									.padding(0 2vmin);
+								}
+							}
+							>p.p-margin{
+								.margin-tp(2vmax);
+								.margin-bm(2vmin);
+							}
+						}
+					}
 				}
 			}
 		}
@@ -256,13 +301,13 @@
 							.bgColor(#DDDDDD);
 							.height(100%);
 							.padding(0 4vmin);
-							.overflow();
+							overflow: auto;
 							.text-al(center);
 							>img{
 								.width(50vmin);
 							}
 							.series-content{
-								.height(14vmax);
+								.height(18vmax);
 								.overflow();
 								.margin-tp(-2vmax);
 								.text-al(left);

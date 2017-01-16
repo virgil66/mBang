@@ -140,6 +140,58 @@
 .home .rotation > ul.rotation-groups > li > a.rotation-list .oneBang .oneBang-bottom .oneBang-bottom-platform > p:first-child {
   margin-right: 4vmin;
 }
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 19vmax;
+  box-sizing: border-box;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-pics {
+  width: 100%;
+  text-align: center;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-pics > img {
+  width: 30vmin;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content {
+  width: 100%;
+  margin-top: 9vmin;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > h1,
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > p {
+  text-align: center;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > h1 {
+  color: #2d297d;
+  font-size: 8vmin;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > h1.title-margin {
+  margin-top: -1vmin;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > p {
+  color: #29a7e1;
+  font-size: 3.5vmin;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > p > span:not(.middle-border) {
+  padding: 0 1.5vmin;
+  box-sizing: border-box;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > p > span.middle-border {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #28a7e1;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #28a7e1;
+  padding: 0 2vmin;
+  box-sizing: border-box;
+}
+.home .rotation > ul.rotation-groups > li > a.rotation-list .technology .technology-content > p.p-margin {
+  margin-top: 2vmax;
+  margin-bottom: 2vmin;
+}
 .home .rotation > ul.rotation-small {
   position: absolute;
   left: 50%;
@@ -321,14 +373,14 @@
   height: 100%;
   padding: 0 4vmin;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: auto;
   text-align: center;
 }
 .home .appInroduce .series .series-coat .series-groups > li > a.series-item > img {
   width: 50vmin;
 }
 .home .appInroduce .series .series-coat .series-groups > li > a.series-item .series-content {
-  height: 14vmax;
+  height: 18vmax;
   overflow: hidden;
   margin-top: -2vmax;
   text-align: left;
